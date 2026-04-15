@@ -1,7 +1,8 @@
 <html>
+<script>
   <div>
     <p class ="nombre">Esto es una prueba</p>
-    <button>Cambia de color</button>
+    <button onclick="CambiaColor"()>Cambia de color</button>
   </div>
 <style>
   body {
@@ -28,6 +29,14 @@
   button.verder {
     background-color: "green";
   }
-  
+
+<p>
+
+  const nombre = document.querySelector(".nombre");
+  function nombreDeFuncion() {
+    nombre.style.color = "blue";
+  }
+
+</script>
 </style>
 </html>
