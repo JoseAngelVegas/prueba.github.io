@@ -1,45 +1,26 @@
-<html>
+<!DOCTYPE html>
 
-  <div>
-    <p class ="nombre">Esto es una prueba 9</p>
-    <button onclick="cambiaColor"()>Cambia de color</button>
-  </div>
+<html lang ="en">
+
+<head>
+  <meta charsed="UTF-8>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <tittle>Document</tittle>
+</head>
+
+<body>
 
 
-  
-<style>
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  p {
-    font-size: 2rem;
-  }
 
-  button {
-    padding: 7px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
 
-  button.azul {
-    background-color: #3498db;
-  }
+  <script>
 
-  button.verde {
-    background-color: #2ecc71;
-  }
-
-<p>
-
-  const nombre = document.querySelector('nombre');
-  function cambiaColor() {
-    nombre.style.color = "white";
-  }
-
-</p>
-</style>
+    const button = document.createElement('button');
+    button.type = "button";
+    button.InnerText = "Boton";
+    document.body.appendChild(button);
+    
+  </script>
+</body>
 </html>
