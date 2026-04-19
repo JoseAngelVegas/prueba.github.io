@@ -3,9 +3,14 @@
    <head>
       
 <button type="mas" class="mas" id="opciones">+</button>
+
 <p style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
+
 <p style="font-size: 12px; text-align: center; font-weight: bold"> Creador por José Ángel Vegas </p>
-<p id="prueba"></p>
+
+<p id="menu"></p>
+
+<p id= "contacto"></p>
    
 
    <style>
@@ -62,7 +67,9 @@
       </div>
       
 <button type="button" class="button">Empezar</button>
+
 <p style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
+
 <button type="publicacion" class="publicacion">Enviar publicación</button>
 
 <script>
@@ -70,8 +77,16 @@
 
    opciones.addEventListener("click", myFunction)
    function myFunction() {
-      document.getElementById("prueba").innerHTML = "Esto se supone que debe funcionar";
+      document.getElementById("menu").innerHTML = "Contácto";
    }
+
+const menu = document.getElementById("menu");
+
+   opciones.addEventListener("click", myFunction)
+   function myFunction() {
+      document.getElementById("contacto").innerHTML = "email";
+   }
+
 </script>
 
 </head>
