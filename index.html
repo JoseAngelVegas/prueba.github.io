@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
    <head>
-
-<link rel='stylesheet'
-media='handheld, only screen and (max-device-width: 320px)' href='phone.css'>
       
-<button type="mas" class="mas">+</button>
+<button type="mas" class="mas" id="opciones">+</button>
 <p style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
 <p style="font-size: 12px; text-align: center; font-weight: bold"> Creador por José Ángel Vegas </p>
+<p id="prueba"></p>
    
 
    <style>
@@ -66,6 +64,15 @@ media='handheld, only screen and (max-device-width: 320px)' href='phone.css'>
 <button type="button" class="button">Empezar</button>
 <p style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
 <button type="publicacion" class="publicacion">Enviar publicación</button>
+
+<script>
+   const opciones = document.getElementById("opciones");
+
+   opciones.addEventListener("click", myFunction)
+   function myFunction() {
+      document.getElementById("prueba").innerHTML = "Esto se supone que debe funcionar";
+   }
+</script>
 
 </head>
 </html>
