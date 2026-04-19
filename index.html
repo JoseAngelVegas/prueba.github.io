@@ -10,7 +10,7 @@
 
 <p id="menu"></p>
 
-<p id="contacto" class="interactivo"></p>
+<p id="contacto" class="interactivo">Contacto</p>
    
 
    <style>
@@ -50,8 +50,8 @@
          margin: 0 auto;
          padding: 15px;
       }
-
-.mas {                  
+      
+      .mas {                  
          font-size: 20px;
          font-weight: bold;
          display: flex;
@@ -59,14 +59,14 @@
          border: none;
          background-color: #ffb970;
       }
-
-.interactivo {
-font-size: 20px;
+      
+      .interactivo {
+         font-size: 20px;
          font-weight: bold;
          display: flex;
          align-items: center; 
          border: none;
-color: white;
+         color: black;
          background-color: #ffb970;
 }
 
@@ -87,14 +87,7 @@ color: white;
 
    opciones.addEventListener("click", myFunction)
    function myFunction() {
-      document.getElementById("menu").innerHTML = "Contácto";
-   }
-
-const menu = document.getElementById("menu");
-
-   menu.addEventListener("click", myFunction)
-   function myFunction() {
-      document.getElementById("contacto").innerHTML = "email";
+      document.getElementById("menu").innerHTML;
    }
 
 </script>
