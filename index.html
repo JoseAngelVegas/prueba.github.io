@@ -2,12 +2,15 @@
 <html>
    <head>
       
-<button type="mas" class="mas" id="opciones">+</button>
+<button onclick="menu()" type="mas" class="mas" id="opciones">+</button>
 
 <p style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
 
 <p style="font-size: 12px; text-align: center; font-weight: bold"> Creador por José Ángel Vegas </p>
-   
+
+<p id="espacio"> Esto debería funcionar </p>
+
+<pre id="configuracion"></pre>
 
    <style>
       
@@ -80,12 +83,9 @@
 
 <script>
 
-   const opciones = document.getElementById("opciones");
-
-   opciones.addEventListener("click", myFunction)
-   function myFunction() {
-      document.getElementById("menuuno").innerHTML = "funciona w";
-
+   function menu() {
+      let text = document.getElementById("configuracion").innerText;
+      document.getElementById("espacio").innerText = text;
 }
 
 </script>
