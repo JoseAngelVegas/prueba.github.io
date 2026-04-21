@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+   
    <head>
       
 <button onclick="menu()" type="mas" class="mas" id="opciones">+</button>
@@ -104,7 +105,20 @@
 </form>
 
 <script>
-   const scriptUrl = ' ';
+   const scriptUrl = 'https://script.google.com/macros/s/AKfycbx0EQc2Xr4OS3TVW7gHQzi-A2-fzIfi294FF4IZdn069aSJ3J3cpkPTC025_5RdPR_C/exec';
+const form = document.forms['formulario'];
+
+   form.addEventListener('subir', e => {
+      e.preventDefault()
+
+      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+      .then(response => Swal.fire({
+         tittle: "Muchas gracias",
+         text: "Publicación enviada",
+         icon: "sucess"}))
+      .then( () => { window.location.reload() } )
+      .catch(error => console.error('Error', error.message))
+   })
 
 </script>
 </head>
