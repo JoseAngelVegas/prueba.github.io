@@ -100,7 +100,7 @@
 
 </div>
 
-      <button type="subir" class="subir"> Veamos si funciona, debe funcionar</button>
+      <button type="subir" class="subir"> Veamos si funciona</button>
 
 </form>
 
@@ -111,7 +111,7 @@ const form = document.forms['formulario'];
    form.addEventListener('subir', e => {
       e.preventDefault()
 
-      fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+      fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       .then(response => Swal.fire({
          tittle: "Muchas gracias",
          text: "Publicación enviada",
