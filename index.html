@@ -12,8 +12,53 @@
 <p id="espacio"> Esto debería funcionar </p>
 
 <pre id="configuracion"></pre>
+      
+</head>
+</style>
+      
+      <div class="container">
+      <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Logo.png?raw=true" alt="Logo" width="332" height="210">
+      </div>
+      
+<button type="button" class="button">Empezar</button>
 
-   <style>
+<p style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
+
+<button type="publicacion" class="publicacion">Enviar publicación</button>
+      
+<body>  
+<form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
+
+<div class="botones">
+   <input name="Publicaciones" id="publicacion" class="input" type="text" placeholder=" "/>
+   <div class="cut"></div>
+   <label for="publicacion" class="placeholder">Esto deberia funcionar</label>
+
+</div>
+
+      <button type="submit" class="submit">Enviar publicación</button>
+
+</form>
+
+<script>
+   const scriptUrl = 'https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec';
+const form = document.forms['formulario'];
+
+   form.addEventListener('submit', e => {
+      e.preventDefault()
+
+      fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
+      .then(response => Swal.fire({
+         tittle: "Muchas gracias",
+         text: "Publicación enviada",
+         icon: "sucess"}))
+      .then( () => { window.location.reload() } )
+      .catch(error => console.error('Error', error.message))
+   })
+
+</script>
+
+ <style>
       
       body {
          background-color: #ffb970;
@@ -69,49 +114,6 @@
          color: black;
          background-color: #ffb970;
 }
-</head>
-</style>
-      
-      <div class="container">
-      <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Logo.png?raw=true" alt="Logo" width="332" height="210">
-      </div>
-      
-<button type="button" class="button">Empezar</button>
-
-<p style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
-
-<button type="publicacion" class="publicacion">Enviar publicación</button>
-      
-<body>  
-<form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
-
-<div class="botones">
-   <input name="Publicaciones" id="publicacion" class="input" type="text" placeholder=" "/>
-   <div class="cut"></div>
-   <label for="publicacion" class="placeholder">Esto deberia funcionar</label>
-
-</div>
-
-      <button type="submit" class="submit">Enviar publicación</button>
-
-</form>
-
-<script>
-   const scriptUrl = 'https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec';
-const form = document.forms['formulario'];
-
-   form.addEventListener('submit', e => {
-      e.preventDefault()
-
-      fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
-      .then(response => Swal.fire({
-         tittle: "Muchas gracias",
-         text: "Publicación enviada",
-         icon: "sucess"}))
-      .then( () => { window.location.reload() } )
-      .catch(error => console.error('Error', error.message))
-   })
-
-</script>
+    
 </body>
 </html>
