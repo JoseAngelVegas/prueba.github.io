@@ -95,13 +95,13 @@
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzxNbBoXpruHD2u7SLnfV9koeh1meBn9rExEVZ91Ra_7axk2NUfPYklD3VztnsoCUr9/exec">
 
 <div class="hoja">
-   <input name="Publicaciones" id="publicacion" class="input" type="text" placeholder=" "></input>
+   <input name="Publicaciones" id="publicacion" class="input" type="text" placeholder=" "/>
    <div class="cut"></div>
    <label for="publicacion" class="placeholder">Esto deberia funcionar</label>
 
 </div>
 
-      <button type="subir" class="subir"> Veamos si funcionar!!</button>
+      <button type="submit" class="submit">Veamos si funcionar!</button>
 
 </form>
 
@@ -109,7 +109,7 @@
    const scriptUrl = 'https://script.google.com/macros/s/AKfycbzxNbBoXpruHD2u7SLnfV9koeh1meBn9rExEVZ91Ra_7axk2NUfPYklD3VztnsoCUr9/exec';
 const form = document.forms['formulario'];
 
-   form.addEventListener('subir', e => {
+   form.addEventListener('submit', e => {
       e.preventDefault()
 
       fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
