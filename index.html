@@ -5,6 +5,8 @@
    <head>
       
 <!-- Esto es el menú principal -->
+
+<meta name="viewport" content="width=device-width, initial-escale=1.0">
       
 <button onclick="menu()" type="mas" class="mas" id="opciones">+</button>
 
@@ -74,6 +76,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          display: flex;
          align-items: center;
          margin: 0 auto;
+         width: 100%
          padding: 15px;
       }
 
@@ -88,6 +91,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          align-items: center;
          margin: 0 auto;
          padding: 5px;
+         width: 100%
          position: relative;
       }
       
@@ -97,6 +101,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          display: flex;
          align-items: center; 
          border: none;
+         width: 100%
          background-color: #ffb970;
       }
 
@@ -108,6 +113,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          border-style: solid;
          border-color: #c8852d;
          color: black;
+         width: 100%;
          background-color: #df9739;
          margin: 0 auto;
          border-radius: 100px;
@@ -119,9 +125,16 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          display: flex;
          align-items: center; 
          border: none;
+         width: 100%;
          color: black;
          background-color: #ffb970;
 }
     
+@media only screen and (max-width:500px) {
+.button, .submit, .mas, .input {
+width: 200%;
+}
+}
+
 </body>
 </html>
