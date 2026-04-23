@@ -40,12 +40,11 @@
 
 <script>
    const scriptUrl = 'https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec';
+   
 const form = document.forms['formulario'];
 
    form.addEventListener('submit', e => {
       e.preventDefault()
-
-      fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    })
 
 </script>
