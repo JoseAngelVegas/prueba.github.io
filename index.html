@@ -8,29 +8,29 @@
 
 <meta name="viewport" content="width=device-width, initial-escale=1.0">
       
-<button onclick="menu()" type="mas" class="mas" id="opciones">+</button>
+<button onclick="menu()" type="mas" class="mas" id="menu">+</button>
 
-<p style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
+<p id="menu" style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
 
-<p style="font-size: 12px; text-align: center; font-weight: bold"> Creador por José Ángel Vegas </p>
+<p id="menu" style="font-size: 12px; text-align: center; font-weight: bold"> Creador por José Ángel Vegas </p>
       
 </head>
    
 </style>
       
-      <div class="container">
+      <div id="menu" class="container">
       <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Logo.png?raw=true" alt="Logo" width="332" height="210">
       </div>
       
-<button type="button" class="button">Empezar</button>
+<button id="menu" type="button" class="button">Empezar</button>
 
-<p style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
+<p id="menu" style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
    
 <body>  
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
 
 <div class="botones">
-   <input name="Publicaciones" id="publicacion" class="input" type="text" placeholder=" "/>
+   <input name="Publicaciones" id="menu" class="input" type="text" placeholder=" "/>
    <div class="cut"></div>
    <label for="publicacion" class="placeholder"></label>
 
@@ -51,7 +51,13 @@ const form = document.forms['formulario'];
 fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       
    })
+</script>
 
+<script>
+   function menu() {
+      document.getElementById("menu").style.visibility = "hidden";
+   }
+   
 </script>
 
  <style>
