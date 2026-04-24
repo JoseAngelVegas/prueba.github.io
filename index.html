@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-escale=1.0">
       
-<button onclick="abrirMenu()" type="mas" class="mas" id="menu">+</button>
+<button onclick="abrirMenu()" type="mas" class="mas" id="mas">+</button>
 
 <p id="menu" style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
 
@@ -55,7 +55,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <script>
    function abrirMenu() {
-      document.getElementById("menu").style.visibility = "visible";
+      document.getElementById("menu").style.visibility = "hidden";
    }
    
 </script>
