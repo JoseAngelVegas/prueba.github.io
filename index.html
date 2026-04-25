@@ -10,9 +10,9 @@
       
 <button onclick="abrirMenu()" type="mas" class="mas" id="mas">+</button>
 
-<p class="menu" style="font-size: 12px; text-align: center; font-weight: bold">Fase Alpha</p>
+<p id="menu" style="font-size: 12px; text-align: center; font-weight: bold">Fase Alpha</p>
 
-<p class="menuu" style="font-size: 12px; text-align: center; font-weight: bold">Creado por José Ángel Vegas</p>
+<p id="menuu" style="font-size: 12px; text-align: center; font-weight: bold">Creado por José Ángel Vegas</p>
       
 </head>
    
@@ -56,6 +56,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 <script>
    function abrirMenu() {
       document.getElementById("menu").style.visiblity = "hidden";
+      document.getElementById("menuu").style.visiblity = "hidden";
    }
    
 </script>
