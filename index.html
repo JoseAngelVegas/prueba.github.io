@@ -13,7 +13,8 @@
 <button onclick="terminosYCondiciones()" id="opciones3" class="opciones">Términos Y Condiciones</button>
 <button onclick="terminosYCondiciones()" id="opciones4" class="opciones">Política De Privacidad</button>
       
-<button onclick="abrirMenu()" id="menu0" type="mas" class="mas">+</button>
+<button onclick="abrirMenu()" id="menu0" class="mas">+</button>
+<button onclick="cerrarMenu()" id="cerrarMenu" class="cerrarMenu">Cerrar</button>
 
 <p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold">Fase Alpha</p>
 
@@ -74,8 +75,24 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("opciones2").style.visibility = "visible";
       document.getElementById("opciones3").style.visibility = "visible";
       document.getElementById("opciones4").style.visibility = "visible";
-
    }
+
+      function cerrarMenu() {
+
+      document.getElementById("menu0").style.visibility = "visible";
+      document.getElementById("menu1").style.visibility = "visible";
+      document.getElementById("menu2").style.visibility = "visible";
+      document.getElementById("menu3").style.visibility = "visible";
+      document.getElementById("menu4").style.visibility = "visible";
+      document.getElementById("menu5").style.visibility = "visible";
+      document.getElementById("menu6").style.visibility = "visible";
+      document.getElementById("menu7").style.visibility = "visible";
+      document.getElementById("menu8").style.visibility = "visible";
+         
+      document.getElementById("opciones1").style.visibility = "hidden";
+      document.getElementById("opciones2").style.visibility = "hidden";
+      document.getElementById("opciones3").style.visibility = "hidden";
+      document.getElementById("opciones4").style.visibility = "hidden";
    
 </script>
 
@@ -159,6 +176,20 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          color: black;
          background-color: #ffb970;
          visibility: hidden;
+         margin: 0 auto;
+    }
+
+    .cerrarMenu {
+         background-color: #ffffff;
+         font-size: 20px;
+         font-weight: bold;
+         border: none;
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         padding: 15px;
+    }
        
 @media only screen and (max-width:500px) {
 .button, .submit, .mas, .input {
