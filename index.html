@@ -24,19 +24,19 @@
       
 <button id="menu4" type="button" class="button">Empezar</button>
 
-<p class="menu5" style="font-size: 12px; text-align: center; font-weight: bold">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
+<p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
    
 <body>  
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
 
 <div class="botones">
-   <input name="Publicaciones" id="menu6" class="input" type="text" placeholder=" "/>
+   <input id="menu6" name="Publicaciones" class="input" type="text" placeholder=" "/>
    <div class="cut"></div>
    <label id="menu7" for="publicacion" class="placeholder"></label>
 
 </div>
 
-      <button type="submit" class="submit">Enviar publicación</button>
+      <button id="menu8" type="submit" class="submit">Enviar publicación</button>
 
 </form>
 
@@ -62,6 +62,8 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("menu5").style.visibility = "hidden";
       document.getElementById("menu6").style.visibility = "hidden";
       document.getElementById("menu7").style.visibility = "hidden";
+      document.getElementById("menu8").style.visibility = "hidden";
+
       
    }
    
