@@ -10,9 +10,9 @@
       
 <button onclick="abrirMenu()" type="mas" class="mas" id="mas">+</button>
 
-<a class="menu" style="font-size: 12px; text-align: center; font-weight: bold" name="Fase alpha, prueba" ></a>
+<a class="menu" style="font-size: 12px; text-align: center; font-weight: bold">Fase Alpha</a>
 
-<a class="menu" style="font-size: 12px; text-align: center; font-weight: bold" name="Creado por José Ángel Vegas"></a>
+<a class="menuu" style="font-size: 12px; text-align: center; font-weight: bold">Creado por José Ángel Vegas</a>
       
 </head>
    
@@ -24,7 +24,7 @@
       
 <button id="menu" type="button" class="button">Empezar</button>
 
-<a class="menu" style="font-size: 12px; text-align: center; font-weight: bold" name="-Esto me Tranqui-Netwoorkió mis expectativas."></a>
+<a class="menu" style="font-size: 12px; text-align: center; font-weight: bold">"-Esto me Tranqui-Netwoorkió mis expectativas."</a>
    
 <body>  
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
@@ -55,12 +55,9 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <script>
    function abrirMenu() {
-      var elements = document.getElementsByClassName("menu");
-      var names = '';
-      for(var i=0; i<elements.length; i++) {
-         names += elements[i].name;
-      }
-      document.write(names);
+      document.getElementById("menu").style.visiblity = "hidden";
+      document.getElementById("menuu").style.visiblity = "hidden";
+
    }
    
 </script>
