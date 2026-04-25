@@ -55,8 +55,8 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <script>
    function abrirMenu() {
-      var elements = document.getElementByClassName("menu")
-      var names = ' ';
+      var elements = document.getElementsByClassName("menu")
+      var names = '';
       for(var i=0; <elements.lenght; i++) {
          names += elements[0].name;
       }
