@@ -28,7 +28,7 @@
       <img id="menu3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Logo.png?raw=true" alt="Logo" width="332" height="210">
       </div>
       
-<button id="menu4" type="button" class="button" class="menu1">Empezar</button>
+<button onclick="entrarMapa()" id="menu4" class="comenzar" class="menu1">Empezar</button>
 
 <p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
    
@@ -61,7 +61,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <script>
    function abrirMenu() {
-      document.getElementById("menu0").style.width = "80%";
+      document.getElementById("menu0").style.visibility = "hidden";
       document.getElementById("menu1").style.visibility = "hidden";
       document.getElementById("menu2").style.visibility = "hidden";
       document.getElementById("menu3").style.visibility = "hidden";
@@ -72,11 +72,12 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("menu8").style.visibility = "hidden";
 
       document.getElementById("opciones1").style.visibility = "visible";
-      document.getElementById("opciones1").style.width = "80%";
       document.getElementById("opciones2").style.visibility = "visible";
       document.getElementById("opciones3").style.visibility = "visible";
       document.getElementById("opciones4").style.visibility = "visible";
       document.getElementById("cerrarMenu").style.visibility = "visible";
+
+   
    }
    
 </script>
@@ -104,6 +105,12 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    
 </script>
 
+<script>
+   function entrarMapa() {
+            document.getElementById("menu1").style.fontsize: = "50px";
+            document.getElementById("menu2").style.font-size: = "50px";
+
+</script>
  <style>
       
       body {
@@ -116,7 +123,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          justify-content: center;
       }
 
-      .button {
+      .comenzar {
          background-color: #ffffff;
          font-size: 20px;
          font-weight: bold;
@@ -176,7 +183,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
     .opciones {
          font-size: 20px;
-         width: 800%;
          font-weight: bold;
          display: flex;
          align-items: center; 
@@ -201,11 +207,23 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
        
     }
        
-@media only screen and (max-width:500px) {
-.button, .submit, .mas, .input {
-width: 40%;
-}
-}
+         @media only screen and (max-width:500px) {
+            .button, .submit, .mas, .input {
+               width: 40%;
+            }
+         }
+
+<!-- Esto es el mapa -->
+
+ <div>
+    
+      <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V1.png?raw=true" alt="Casa de SAM" width="80" height="80">
+      <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20TIM%20V1.png?raw=true.png?raw=true" alt="Casa de TIM" width="80" height="80">
+      <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Laboratorio%20V1.PNG?raw=true" alt="Laboratorio" width="150" height="400">
+      <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" alt="Cine" width="80" height="80">
+      <img src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" alt="Escuela Química" width="80" height="115">
+
+</div>
 
 </body>
 </html>
