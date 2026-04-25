@@ -10,9 +10,9 @@
       
 <button onclick="abrirMenu()" type="mas" class="mas" id="mas">+</button>
 
-<p id="men" style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
+<p class="menu" style="font-size: 12px; text-align: center; font-weight: bold"> Fase Alpha. </p>
 
-<p id="menu" style="font-size: 12px; text-align: center; font-weight: bold"> Creador por José Ángel Vegas </p>
+<p class="menu" style="font-size: 12px; text-align: center; font-weight: bold"> Creador por José Ángel Vegas </p>
       
 </head>
    
@@ -24,7 +24,7 @@
       
 <button id="menu" type="button" class="button">Empezar</button>
 
-<p id="menu" style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
+<p class="menu" style="font-size: 12px; text-align: center; font-weight: bold"> -"Esto me Tranqui-Netwoorkió mis expectativas." </p>
    
 <body>  
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
@@ -55,7 +55,12 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <script>
    function abrirMenu() {
-      document.getElementById("menu").style.visibility = "hidden";
+      var elements = document.getElementByClassName("menu")
+      var names = ' ';
+      for(var i=0; <elements.lenght; i++) {
+         names += elements[0].name;
+      }
+      document.write(names);
    }
    
 </script>
