@@ -36,7 +36,7 @@
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
 
 <div class="botones">
-   <input id="menu6" name="Publicaciones" class="input" type="text" placeholder=" "/>
+   <input id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
    <div class="cut"></div>
    <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
 
@@ -75,10 +75,15 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("menu8").style.padding = "0px";
 
       document.getElementById("opciones1").style.fontSize = "20px";
+      document.getElementById("opciones1").style.padding = "8px";
       document.getElementById("opciones2").style.fontSize = "20px";
+      document.getElementById("opciones2").style.padding = "8px";
       document.getElementById("opciones3").style.fontSize = "20px";
+      document.getElementById("opciones3").style.padding = "8px";
       document.getElementById("opciones4").style.fontSize = "20px";
+      document.getElementById("opciones4").style.padding = "8px";
       document.getElementById("cerrarMenu").style.fontSize = "20px";
+      document.getElementById("cerrarMenu").style.padding = "5px";
       
    }
    
@@ -101,10 +106,15 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("menu8").style.padding = "5px";
          
       document.getElementById("opciones1").style.fontSize = "0px";
+      document.getElementById("opciones1").style.padding = "0px";
       document.getElementById("opciones2").style.fontSize = "0px";
+      document.getElementById("opciones2").style.padding = "0px";
       document.getElementById("opciones3").style.fontSize = "0px";
+      document.getElementById("opciones3").style.padding = "0px";
       document.getElementById("opciones4").style.fontSize = "0px";
+      document.getElementById("opciones4").style.padding = "0px";
       document.getElementById("cerrarMenu").style.fontSize = "0px";
+      document.getElementById("cerrarMenu").style.padding = "0px";
 
    }
    
@@ -265,6 +275,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.body.style.backgroundColor = "#88ff6f";
       
    }
+   
 </script>
 
 <style>
