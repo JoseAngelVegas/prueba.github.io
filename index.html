@@ -16,9 +16,9 @@
 <button onclick="abrirMenu()" id="menu0" class="mas" class="menu1">+</button>
 <button onclick="cerrarMenu()" id="cerrarMenu" class="cerrarMenu">Cerrar</button>
 
-<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">Fase Alpha</p>
+<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold"">Fase Alpha</p>
 
-<p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">Creado por José Ángel Vegas</p>
+<p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold">Creado por José Ángel Vegas</p>
       
 </head>
    
@@ -28,7 +28,7 @@
       <img id="menu3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Logo.png?raw=true" alt="Logo" width="332" height="210">
       </div>
       
-<button onclick="entrarMapa()" id="menu4" class="comenzar" class="menu1">Empezar</button>
+<button onclick="entrarMapa()" id="menu4" class="comenzar">Empezar</button>
 
 <p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
    
@@ -36,7 +36,7 @@
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
 
 <div class="botones">
-   <input id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " class="menu1"/>
+   <input id="menu6" name="Publicaciones" class="input" type="text" placeholder=" "/>
    <div class="cut"></div>
    <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
 
@@ -68,7 +68,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("menu4").style.padding = "0px";
       document.getElementById("menu4").style.fontSize = "0px";
       document.getElementById("menu5").style.fontSize = "0px";
-      document.getElementById("menu6").style.fontSize = "0px";
+      document.getElementById("menu6").style.visibility = "hidden";
       document.getElementById("menu6").style.padding = "0px";
       document.getElementById("menu7").style.padding = "0px";
       document.getElementById("menu8").style.fontSize = "0px";
