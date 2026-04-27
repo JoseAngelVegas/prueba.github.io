@@ -124,7 +124,15 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       
       body {
          background-color: #ffb970;
+         animation-name: cicloDiaNoche;
+         animation-duration: 5s;
+         animation-iteration-count: 50;
       } 
+
+    @keyframe cicloDiaNoche {
+       0% {background-color: #ffb970;}
+       100% {background-color: #ffffff;}
+    }
       
       .container {
          display: flex;
@@ -277,13 +285,20 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    }
    
 </script>
+   
+<!-- Animaciones y alineado -->
 
 <style>
 
    .estructuras {
       margin: 0 auto;
-      align-items: center; 
+      align-items: center;
    }
+
+   
+
+@keyframe
+   
    
 </style>
 
