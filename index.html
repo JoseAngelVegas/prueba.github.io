@@ -229,7 +229,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
  <div>
     
-      <img class="estructuras" id="mapa1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V1.png?raw=true" width="0" height="0">
+      <img onclick="casaDeSam()" class="estructuras" id="mapa1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V1.png?raw=true" width="0" height="0">
       <img class="estructuras" id="mapa2" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20TIM%20V1.png?raw=true.png?raw=true" width="0" height="0">
       <img class="estructuras" id="mapa3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Laboratorio%20V1.PNG?raw=true" width="0" height="0">
       <img class="estructuras" id="mapa4" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
@@ -277,8 +277,18 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    }
    
 </script>
-   
-<!-- Animaciones y alineado -->
+
+<script>
+
+function entrarMapa() {
+      document.getElementById("mapa1").style.width = "0px";
+document.getElementById("mapa2").style.width = "0px";
+document.getElementById("mapa3").style.width = "0px";
+document.getElementById("mapa4").style.width = "0px";
+
+}
+
+</script>
 
 <style>
 
@@ -287,11 +297,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       align-items: center;
    }
 
-   
-
-@keyframe
-   
-   
 </style>
 
 </body>
