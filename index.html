@@ -283,7 +283,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <button onclick="salirSam()" id="salirSam" class="salir">Salir.</button>
 <img class="sprites" id="lupa1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Lupa.png?raw=true" width="0" height="0">
-<img class="sprites" id="SAM" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
+<img onclick="samConversacion()" class="sprites" id="SAM" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
    
 <style>
 
@@ -337,6 +337,18 @@ document.body.style.backgroundColor = "#cbb2ff";
 }
 
 </script>
+
+<script>
+   function samConversacion() {
+document.getElementById("SAM").style.width = "0px";
+document.getElementById("SAM").style.height = "0px";
+document.getElementById("salirSam").style.fontSize = "0px";
+document.getElementById("salirSam").style.padding = "0px";
+document.getElementById("lupa1").style.width = "0px";
+document.getElementById("lupa1").style.height = "0px";
+
+   }
+      
 
 </body>
 </html>
