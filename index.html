@@ -283,7 +283,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <button onclick="salirSam()" id="salirSam" class="salir">Salir.</button>
 <img class="sprites" id="lupa1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Lupa.png?raw=true" width="0" height="0">
-<img onclick="samConversacion()" class="sprites" id="SAM" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
+<img onclick="samConversacionMenu()" class="sprites" id="SAM" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
    
 <style>
 
@@ -338,7 +338,7 @@ document.body.style.backgroundColor = "#332b54";
 
 </script>
 
-<img id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
+<img onclick="interaccionSam" id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
 <img id="samIcono2" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%202.png?raw=true" width="0" height="0">
 <img id="samIcono3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%203.png?raw=true" width="0" height="0">
 <img id="samIcono4" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%204.png?raw=true" width="0" height="0">
@@ -358,6 +358,13 @@ document.body.style.backgroundColor = "#332b54";
 <p class="respuestaSam" id="Respuesta3" style="font-size: 0px; text-align: center; font-weight: bold">Viviendo en un entorno difícil, lo normal.</p>
 <p class="respuestaSam" id="Respuesta4" style="font-size: 0px; text-align: center; font-weight: bold">Soy un robot muy normalito, más tranqui que TIM.</p>
 
+<p class="respuestaSam" id="Interaccion1" style="font-size: 0px; text-align: center; font-weight: bold">Saludos, mi nombre es SAM.</p>
+<p class="respuestaSam" id="Interaccion2" style="font-size: 0px; text-align: center; font-weight: bold">Fingir una sonrisa por ellos es difícil...</p>
+<p class="respuestaSam" id="Interaccion3" style="font-size: 0px; text-align: center; font-weight: bold">Esto es difícil. Ellos creen que es fácil.</p>
+<p class="respuestaSam" id="Interaccion4" style="font-size: 0px; text-align: center; font-weight: bold">No te preocupes, solo es algo personal.</p>
+
+<button onclick="samConversacion()" id="inicioSam" class="ConversacionConSAM">Hablemos.</button>
+   
 <style>
 
    .ConversacionConSAM {
@@ -395,6 +402,51 @@ document.body.style.backgroundColor = "#332b54";
 </style>
 
 <script>
+
+  function samConversacionMenu() {
+
+document.getElementById("SAM").style.width = "0px";
+document.getElementById("SAM").style.height = "0px";
+document.getElementById("salirSam").style.fontSize = "0px";
+document.getElementById("salirSam").style.padding = "0px";
+document.getElementById("lupa1").style.width = "0px";
+document.getElementById("lupa1").style.height = "0px";
+
+document.getElementById("samIcono1").style.width = "80px";
+document.getElementById("samIcono1").style.height = "50px";
+
+document.getElementById("Interaccion1").style.fontSize = "20px";
+document.getElementById("Interaccion1").style.padding = "15px";
+
+document.getElementById("salirConversacionSam2").style.fontSize = "20px";
+document.getElementById("salirConversacionSam2").style.padding = "5px";
+
+document.getElementById("inicioSam").style.fontSize = "20px";
+document.getElementById("inicioSam").style.padding = "5px";
+
+   </script>
+
+<script>
+
+   function interaccionSam() {
+
+document.getElementById("ConversacionSam1").style.padding = "0px";
+document.getElementById("ConversacionSam1").style.borderStyle = "none";
+document.getElementById("ConversacionSam1").style.fontSize = "0px";
+document.getElementById("ConversacionSam2").style.padding = "0px";
+document.getElementById("ConversacionSam2").style.borderStyle = "none";
+document.getElementById("ConversacionSam2").style.fontSize = "0px";
+document.getElementById("ConversacionSam3").style.padding = "0px";
+document.getElementById("ConversacionSam3").style.borderStyle = "none";
+document.getElementById("ConversacionSam3").style.fontSize = "0px";
+document.getElementById("ConversacionSam4").style.padding = "0px";
+document.getElementById("ConversacionSam4").style.borderStyle = "none";
+document.getElementById("ConversacionSam4").style.fontSize = "0px";
+      
+
+</script>
+
+<script>
    
    function samConversacion() {
 document.getElementById("SAM").style.width = "0px";
@@ -419,6 +471,9 @@ document.getElementById("ConversacionSam4").style.fontSize = "20px";
 
 document.getElementById("samIcono1").style.width = "80px";
 document.getElementById("samIcono1").style.height = "50px";
+
+document.getElementById("salirConversacionSam2").style.fontSize = "20px";
+document.getElementById("salirConversacionSam2").style.padding = "5px";
 
 document.body.style.backgroundColor = "#120d24";
 
@@ -570,6 +625,12 @@ document.getElementById("samIcono1").style.height = "50px";
 document.getElementById("salirConversacionSam").style.fontSize = "0px";
 document.getElementById("salirConversacionSam").style.padding = "0px";
 
+document.getElementById("inicioSam").style.fontSize = "0px";
+document.getElementById("inicioSam").style.padding = "0px";
+
+document.getElementById("salirConversacionSam2").style.fontSize = "20px";
+document.getElementById("salirConversacionSam2").style.padding = "5px";
+
    }
 
 </script>
@@ -600,6 +661,12 @@ document.getElementById("salirSam").style.fontSize = "12px";
 document.getElementById("salirSam").style.padding = "20px";
 document.getElementById("lupa1").style.width = "150px";
 document.getElementById("lupa1").style.height = "200px";
+
+document.getElementById("salirConversacionSam2").style.fontSize = "0px";
+document.getElementById("salirConversacionSam2").style.padding = "0px";
+
+document.getElementById("Interaccion1").style.fontSize = "0px";
+document.getElementById("Interaccion1").style.padding = "0px";
 
 document.body.style.backgroundColor = "#332b54";
 
