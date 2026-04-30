@@ -345,10 +345,10 @@ document.body.style.backgroundColor = "#332b54";
 
 <button onclick="salirConversacionSam()" id="salirConversacionSam" class="salir">Cerrar</button>
 
-<p id="Respuesta1" style="font-size: 0px; text-align: center; font-weight: bold">No, vivo con mi hermano TIM... Y ellos.</p>
-<p id="Respuesta2" style="font-size: 0px; text-align: center; font-weight: bold">Obvio, pero la vida no es muy buena...</p>
-<p id="Respuesta3" style="font-size: 0px; text-align: center; font-weight: bold">Viviendo en un entorno difícil, lo normal.</p>
-<p id="Respuesta4" style="font-size: 0px; text-align: center; font-weight: bold">Soy un robot muy normalito, más tranqui que TIM.</p>
+<p class="respuestaSam" id="Respuesta1" style="font-size: 0px; text-align: center; font-weight: bold">No, vivo con mi hermano TIM... Y ellos.</p>
+<p class="respuestaSam" id="Respuesta2" style="font-size: 0px; text-align: center; font-weight: bold">Obvio, pero la vida no es muy buena...</p>
+<p class="respuestaSam" id="Respuesta3" style="font-size: 0px; text-align: center; font-weight: bold">Viviendo en un entorno difícil, lo normal.</p>
+<p class="respuestaSam" id="Respuesta4" style="font-size: 0px; text-align: center; font-weight: bold">Soy un robot muy normalito, más tranqui que TIM.</p>
 
 <style>
 
@@ -365,6 +365,24 @@ document.body.style.backgroundColor = "#332b54";
       padding: 0px;
       border-style: none;
       border-color: white;
+
+   }
+
+   .respuestaSam {
+
+      font-color: #cbb2ff;
+      font-size: 0px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0px;
+      border-style: none;
+      border-color: white;
+
+   }
       
 </style>
 
@@ -415,6 +433,87 @@ document.getElementById("ConversacionSam3").style.fontSize = "0px";
 document.getElementById("ConversacionSam4").style.padding = "0px";
 document.getElementById("ConversacionSam4").style.borderStyle = "none";
 document.getElementById("ConversacionSam4").style.fontSize = "0px";
+
+document.getElementById("salirConversacionSam").style.fontSize = "20px";
+document.getElementById("salirConversacionSam").style.padding = "5px";
+
+   }
+
+</script>
+
+<script>
+   
+   function esteEsUnMundoSam() {
+
+document.getElementById("Respuesta2").style.fontSize = "20px";
+
+document.getElementById("ConversacionSam1").style.padding = "0px";
+document.getElementById("ConversacionSam1").style.borderStyle = "none";
+document.getElementById("ConversacionSam1").style.fontSize = "0px";
+document.getElementById("ConversacionSam2").style.padding = "0px";
+document.getElementById("ConversacionSam2").style.borderStyle = "none";
+document.getElementById("ConversacionSam2").style.fontSize = "0px";
+document.getElementById("ConversacionSam3").style.padding = "0px";
+document.getElementById("ConversacionSam3").style.borderStyle = "none";
+document.getElementById("ConversacionSam3").style.fontSize = "0px";
+document.getElementById("ConversacionSam4").style.padding = "0px";
+document.getElementById("ConversacionSam4").style.borderStyle = "none";
+document.getElementById("ConversacionSam4").style.fontSize = "0px";
+
+document.getElementById("salirConversacionSam").style.fontSize = "20px";
+document.getElementById("salirConversacionSam").style.padding = "5px";
+
+   }
+
+</script>
+
+<script>
+   
+   function comoFuncionaEsteMundoSam()() {
+
+document.getElementById("Respuesta3").style.fontSize = "20px";
+
+document.getElementById("ConversacionSam1").style.padding = "0px";
+document.getElementById("ConversacionSam1").style.borderStyle = "none";
+document.getElementById("ConversacionSam1").style.fontSize = "0px";
+document.getElementById("ConversacionSam2").style.padding = "0px";
+document.getElementById("ConversacionSam2").style.borderStyle = "none";
+document.getElementById("ConversacionSam2").style.fontSize = "0px";
+document.getElementById("ConversacionSam3").style.padding = "0px";
+document.getElementById("ConversacionSam3").style.borderStyle = "none";
+document.getElementById("ConversacionSam3").style.fontSize = "0px";
+document.getElementById("ConversacionSam4").style.padding = "0px";
+document.getElementById("ConversacionSam4").style.borderStyle = "none";
+document.getElementById("ConversacionSam4").style.fontSize = "0px";
+
+document.getElementById("salirConversacionSam").style.fontSize = "20px";
+document.getElementById("salirConversacionSam").style.padding = "5px";
+
+   }
+
+</script>
+
+<script>
+   
+   function podriasDecirAlgoDeTiSam() {
+
+document.getElementById("Respuesta4").style.fontSize = "20px";
+
+document.getElementById("ConversacionSam1").style.padding = "0px";
+document.getElementById("ConversacionSam1").style.borderStyle = "none";
+document.getElementById("ConversacionSam1").style.fontSize = "0px";
+document.getElementById("ConversacionSam2").style.padding = "0px";
+document.getElementById("ConversacionSam2").style.borderStyle = "none";
+document.getElementById("ConversacionSam2").style.fontSize = "0px";
+document.getElementById("ConversacionSam3").style.padding = "0px";
+document.getElementById("ConversacionSam3").style.borderStyle = "none";
+document.getElementById("ConversacionSam3").style.fontSize = "0px";
+document.getElementById("ConversacionSam4").style.padding = "0px";
+document.getElementById("ConversacionSam4").style.borderStyle = "none";
+document.getElementById("ConversacionSam4").style.fontSize = "0px";
+
+document.getElementById("salirConversacionSam").style.fontSize = "20px";
+document.getElementById("salirConversacionSam").style.padding = "5px";
 
    }
 
