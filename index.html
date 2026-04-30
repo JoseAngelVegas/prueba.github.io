@@ -16,7 +16,7 @@
 <button onclick="abrirMenu()" id="menu0" class="mas" class="menu1">+</button>
 <button onclick="cerrarMenu()" id="cerrarMenu" class="cerrarMenu">Cerrar</button>
 
-<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold"">Fase Alpha</p>
+<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold">Fase Alpha</p>
 
 <p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold">Creado por José Ángel Vegas</p>
       
@@ -343,6 +343,13 @@ document.body.style.backgroundColor = "#332b54";
 <button onclick="comoFuncionaEsteMundoSam()" id="ConversacionSam3" class="ConversacionConSAM">¿Cómo funciona este mundo?</button>
 <button onclick="podriasDecirAlgoDeTiSam()" id="ConversacionSam4" class="ConversacionConSAM">¿Podrías decir algo de ti?</button>
 
+<button onclick="salirConversacionSam()" id="salirConversacionSam" class="salir">Cerrar</button>
+
+<p id="Respuesta1" style="font-size: 0px; text-align: center; font-weight: bold">No, vivo con mi hermano TIM... Y ellos.</p>
+<p id="Respuesta2" style="font-size: 0px; text-align: center; font-weight: bold">Obvio, pero la vida no es muy buena...</p>
+<p id="Respuesta3" style="font-size: 0px; text-align: center; font-weight: bold">Viviendo en un entorno difícil, lo normal.</p>
+<p id="Respuesta4" style="font-size: 0px; text-align: center; font-weight: bold">Soy un robot muy normalito, más tranqui que TIM.</p>
+
 <style>
 
    .ConversacionConSAM {
@@ -385,6 +392,29 @@ document.getElementById("ConversacionSam4").style.borderStyle = "solid";
 document.getElementById("ConversacionSam4").style.fontSize = "20px";
 
 document.body.style.backgroundColor = "#120d24";
+
+   }
+
+</script>
+
+<script>
+   
+   function vivesSoloSam() {
+
+document.getElementById("Respuesta1").style.fontSize = "20px";
+
+document.getElementById("ConversacionSam1").style.padding = "0px";
+document.getElementById("ConversacionSam1").style.borderStyle = "none";
+document.getElementById("ConversacionSam1").style.fontSize = "0px";
+document.getElementById("ConversacionSam2").style.padding = "0px";
+document.getElementById("ConversacionSam2").style.borderStyle = "none";
+document.getElementById("ConversacionSam2").style.fontSize = "0px";
+document.getElementById("ConversacionSam3").style.padding = "0px";
+document.getElementById("ConversacionSam3").style.borderStyle = "none";
+document.getElementById("ConversacionSam3").style.fontSize = "0px";
+document.getElementById("ConversacionSam4").style.padding = "0px";
+document.getElementById("ConversacionSam4").style.borderStyle = "none";
+document.getElementById("ConversacionSam4").style.fontSize = "0px";
 
    }
 
