@@ -341,7 +341,8 @@ document.body.style.backgroundColor = "#332b54";
 
 </script>
 
-<img onclick="interaccionSam" id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
+<img onclick="interaccionSam()" id="samIcono0" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
+<img id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
 <img id="samIcono2" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%202.png?raw=true" width="0" height="0">
 <img id="samIcono3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%203.png?raw=true" width="0" height="0">
 <img id="samIcono4" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%204.png?raw=true" width="0" height="0">
@@ -357,10 +358,14 @@ document.body.style.backgroundColor = "#332b54";
 <p class="respuestaSam" id="Respuesta3" style="font-size: 0px; text-align: center; font-weight: bold">Viviendo en un entorno difícil, lo normal.</p>
 <p class="respuestaSam" id="Respuesta4" style="font-size: 0px; text-align: center; font-weight: bold">Soy un robot muy normalito, más tranqui que TIM.</p>
 
-<p class="respuestaSam" id="Interaccion1" style="font-size: 0px; text-align: center; font-weight: bold">Saludos, mi nombre es SAM.</p>
-<p class="respuestaSam" id="Interaccion2" style="font-size: 0px; text-align: center; font-weight: bold">Fingir una sonrisa por ellos es difícil...</p>
-<p class="respuestaSam" id="Interaccion3" style="font-size: 0px; text-align: center; font-weight: bold">Esto es difícil. Ellos creen que es fácil.</p>
-<p class="respuestaSam" id="Interaccion4" style="font-size: 0px; text-align: center; font-weight: bold">No te preocupes, solo es algo personal.</p>
+<p class="respuestaSam" id="InteraccionSam1" style="font-size: 0px; text-align: center; font-weight: bold">Saludos, mi nombre es SAM.</p>
+<p class="respuestaSam" id="InteraccionSam2" style="font-size: 0px; text-align: center; font-weight: bold">Fingir una sonrisa por ellos es difícil...</p>
+<p class="respuestaSam" id="InteraccionSam3" style="font-size: 0px; text-align: center; font-weight: bold">Esto es difícil. Ellos creen que es fácil.</p>
+<p class="respuestaSam" id="InteraccionSam4" style="font-size: 0px; text-align: center; font-weight: bold">No te preocupes, solo es algo personal.</p>
+
+<button onclick="respuestaSam1()" id="interaccionesSam1" class="interaccionesSam">¿Qué hace que te sientas así?</button>
+<button onclick="respuestaSam2()" id="interaccionesSam2" class="interaccionesSam">¿Qué?</button>
+<button onclick="respuestaSam3()" id="interaccionesSam3" class="interaccionesSam">Entiendo...</button>
 
 <button onclick="samConversacion()" id="inicioSam" class="ConversacionConSAM">Hablemos.</button>
    
@@ -411,8 +416,8 @@ document.getElementById("salirSam").style.padding = "0px";
 document.getElementById("lupa1").style.width = "0px";
 document.getElementById("lupa1").style.height = "0px";
 
-document.getElementById("samIcono1").style.width = "80px";
-document.getElementById("samIcono1").style.height = "50px";
+document.getElementById("samIcono0").style.width = "80px";
+document.getElementById("samIcono0").style.height = "50px";
 
 document.getElementById("Interaccion1").style.fontSize = "20px";
 document.getElementById("Interaccion1").style.padding = "15px";
@@ -431,7 +436,7 @@ document.body.style.backgroundColor = "#120d24";
 
 <script>
 
-   function interaccionSam() {
+   function interaccionSam1() {
 
 document.getElementById("ConversacionSam1").style.padding = "0px";
 document.getElementById("ConversacionSam1").style.borderStyle = "none";
@@ -449,10 +454,42 @@ document.getElementById("ConversacionSam4").style.fontSize = "0px";
 document.getElementById("inicioSam").style.fontSize = "0px";
 document.getElementById("inicioSam").style.padding = "0px";
 
-document.getElementById("Interaccion1").style.fontSize = "0px";
-document.getElementById("Interaccion1").style.padding = "0px";
+document.getElementById("InteraccionSam1").style.fontSize = "0px";
+document.getElementById("InteraccionSam1").style.padding = "0px";
+
+document.getElementById("InteraccionSam2").style.fontSize = "20px";
+document.getElementById("InteraccionSam2").style.padding = "5px";
+
+document.getElementById("samIcono2").style.width = "80px";
+document.getElementById("samIcono2").style.height = "50px";
 
    }
+
+</script>
+
+<script>
+
+   function interaccionSam2() {
+
+document.getElementById("InteraccionSam3").style.fontSize = "20px";
+document.getElementById("InteraccionSam3").style.padding = "5px";
+
+document.getElementById("samIcono3").style.width = "80px";
+document.getElementById("samIcono3").style.height = "50px";
+
+   }
+
+</script>
+
+<script>
+
+   function interaccionSam3() {
+
+document.getElementById("InteraccionSam4").style.fontSize = "20px";
+document.getElementById("InteraccionSam4").style.padding = "5px";
+
+document.getElementById("samIcono4").style.width = "80px";
+document.getElementById("samIcono4").style.height = "50px";
 
 </script>
 
