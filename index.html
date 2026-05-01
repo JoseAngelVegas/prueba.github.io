@@ -341,12 +341,12 @@ document.body.style.backgroundColor = "#332b54";
 
 </script>
 
-<img onclick="interaccionSam()" id="samIcono0" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
-<img id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
-<img id="samIcono2" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%202.png?raw=true" width="0" height="0">
-<img id="samIcono3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%203.png?raw=true" width="0" height="0">
-<img id="samIcono4" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%204.png?raw=true" width="0" height="0">
-<img id="samIcono5" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%205.png?raw=true" width="0" height="0">
+<img class="iconos" onclick="interaccionSam()" id="samIcono0" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
+<img class="iconos" id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
+<img class="iconos" id="samIcono2" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%202.png?raw=true" width="0" height="0">
+<img class="iconos" id="samIcono3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%203.png?raw=true" width="0" height="0">
+<img class="iconos" id="samIcono4" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%204.png?raw=true" width="0" height="0">
+<img class="iconos" id="samIcono5" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono%205.png?raw=true" width="0" height="0">
    
 <button onclick="vivesSoloSam()" id="ConversacionSam1" class="ConversacionConSAM">¿Vives en este lugar solo?</button>
 <button onclick="esteEsUnMundoSam()" id="ConversacionSam2" class="ConversacionConSAM">¿Este es un mundo digital?</button>
@@ -384,6 +384,14 @@ document.body.style.backgroundColor = "#332b54";
       padding: 0px;
       border-style: none;
       border-color: white;
+
+   }
+
+   .iconos {
+
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
 
    }
 
