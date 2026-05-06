@@ -222,12 +222,12 @@ Contacto: Para cualquier duda sobre estos términos, puedes escribirme directame
 
 <button onclick="cerrarOpciones()" id="cerrarOpciones" class="salir">Cerrar</button>
       
-<button onclick="abrirMenu()" id="menu0" class="mas" class="menu1">+</button>
+<button onclick="abrirMenu()" id="menu0" class="mas" class="menu1" class="animacionMenu">+</button>
 <button onclick="cerrarMenu()" id="cerrarMenu" class="cerrarMenu">Cerrar</button>
 
-<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold">Fase Alpha</p>
+<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold" class="animacionMenu">Fase Alpha</p>
 
-<p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold">Creado por José Ángel Vegas</p>
+<p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold" class="animacionMenu">Creado por José Ángel Vegas</p>
       
 </head>
    
@@ -237,21 +237,21 @@ Contacto: Para cualquier duda sobre estos términos, puedes escribirme directame
       <img id="menu3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Logo.png?raw=true" alt="Logo" width="332" height="210">
       </div>
       
-<button onclick="entrarMapa()" id="menu4" class="comenzar">Empezar</button>
+<button onclick="entrarMapa()" id="menu4" class="comenzar" class="animacionMenu">Empezar</button>
 
-<p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
+<p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1" class="animacionMenu">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
    
 <body>  
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
 
 <div class="botones">
-   <input id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
+   <input id="menu6" name="Publicaciones" class="animacionMenu" class="input" type="text" placeholder=" " maxlenght="50"/>
    <div class="cut"></div>
-   <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
+   <label id="menu7" for="publicacion" class="placeholder" class="menu1" class="animacionMenu"></label>
 
 </div>
 
-      <button id="menu8" type="submit" class="submit" class="menu1">Enviar publicación</button>
+      <button id="menu8" type="submit" class="submit" class="menu1" class="animacionMenu">Enviar publicación</button>
 
 </form>
 
@@ -408,6 +408,16 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          margin: 0 auto;
          padding: 15px;
       }
+    
+      .animacionMenu {
+         animation-name: AnimacionDeMenu;
+         animation-duration: 5s;
+      }
+
+    @keyframes AnimacionDeMenu {
+       0% {top:200px;}
+      100% {top:0px;}
+    }
 
       .submit {
          background-color: #5c3f00;
