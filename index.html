@@ -11,7 +11,21 @@
 <button onclick="queEsTN()" id="opciones1" class="opciones">¿Qué es Tranqui Netwoork?</button>
 <button onclick="contacto()" id="opciones2" class="opciones">Contácto</button>
 <button onclick="terminosYCondiciones()" id="opciones3" class="opciones">Términos Y Condiciones</button>
-<button onclick="terminosYCondiciones()" id="opciones4" class="opciones">Política De Privacidad</button>
+<button onclick="politicaDePrivacidad()" id="opciones4" class="opciones">Política De Privacidad</button>
+
+
+<p id="queEsTN" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">
+
+Tranqui Netwoork (O simplemente TN) es una red social basada en texto altamente experimental.
+
+No hay feed infinito, no hay toxicidad, grooming, doxeos ni funas, es (muy probablemente) la red social más segura del mundo. Es TÚ espacio seguro, un lugar para visitas rápidas de 1-2 minutos.
+   
+</p>
+
+<p id="contacto" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
+<p id="terminosYCondiciones" style="font-size: 12px; text-align: center; font-weight: bold" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
+
+<button onclick="cerrarOpciones()" id="cerrarOpciones" class="salir">Cerrar</button>
       
 <button onclick="abrirMenu()" id="menu0" class="mas" class="menu1">+</button>
 <button onclick="cerrarMenu()" id="cerrarMenu" class="cerrarMenu">Cerrar</button>
@@ -121,6 +135,27 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    }
    
 </script>
+
+<!-- Esto es el menu y cosas así -->
+
+<script>
+   function queEsTN() {
+
+      document.getElementById("opciones1").style.fontSize = "0px";
+      document.getElementById("opciones1").style.padding = "0px";
+      document.getElementById("opciones2").style.fontSize = "0px";
+      document.getElementById("opciones2").style.padding = "0px";
+      document.getElementById("opciones3").style.fontSize = "0px";
+      document.getElementById("opciones3").style.padding = "0px";
+      document.getElementById("opciones4").style.fontSize = "0px";
+      document.getElementById("opciones4").style.padding = "0px";
+      document.getElementById("cerrarMenu").style.fontSize = "0px";
+      document.getElementById("cerrarMenu").style.padding = "0px";
+
+      document.getElementById("QueEsTN").style.fontSize = "12px";
+
+   }
+      
 
  <style>
       
