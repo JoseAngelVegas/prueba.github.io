@@ -143,39 +143,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("opciones4").style.padding = "0px";
       document.getElementById("cerrarMenu").style.fontSize = "0px";
       document.getElementById("cerrarMenu").style.padding = "0px";
-
-      document.getElementById("terminosYCondiciones1").style.fontSize = "40px";
-      document.getElementById("terminosYCondiciones2").style.fontSize = "35px";
-      document.getElementById("terminosYCondiciones3").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones4").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones5").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones6").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones7").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones8").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones9").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones10").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones11").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones12").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones13").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones14").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones15").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones16").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones17").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones18").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones19").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones20").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones21").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones22").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones23").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones24").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones25").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones26").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones27").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones28").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones29").style.fontSize = "15px";
-      document.getElementById("terminosYCondiciones30").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones31").style.fontSize = "25px";
-      document.getElementById("terminosYCondiciones32").style.fontSize = "25px";
       
    }
 
@@ -231,19 +198,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          margin: 0 auto;
          padding: 15px;
       }
-
-
-    @keyframes animacionDeMenu {
-     0% {top:200px; opacity: 0%}
-     100% {top:0px; opacity: 100%}
-       
-    }
-
-    @keyframes colorDeFondo {
-     0% {background-color: black;}
-     100% {background-color: #ffb970;}
-       
-    }
 
       .submit {
          background-color: #5c3f00;
@@ -349,6 +303,18 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          padding: 0px;
        
     }
+
+     @keyframes animacionDeMenu {
+     0% {top:200px; opacity: 0%}
+     100% {top:0px; opacity: 100%}
+       
+    }
+
+    @keyframes colorDeFondo {
+     0% {background-color: black;}
+     100% {background-color: #ffb970;}
+       
+    }
        
          @media only screen and (max-width:500px) {
             .button, .submit, .mas, .input {
@@ -374,6 +340,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
 <script>
    function entrarMapa() {
+      document.getElementById("logo").style.fontSize = "0px";
       document.getElementById("menu0").style.fontSize = "0px";
       document.getElementById("menu1").style.fontSize = "0px";
       document.getElementById("menu2").style.fontSize = "0px";
@@ -382,7 +349,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("menu4").style.padding = "0px";
       document.getElementById("menu4").style.fontSize = "0px";
       document.getElementById("menu5").style.fontSize = "0px";
-      document.getElementById("menu6").style.visibility = "hidden";
       document.getElementById("menu6").style.padding = "0px";
       document.getElementById("menu7").style.padding = "0px";
       document.getElementById("menu8").style.fontSize = "0px";
@@ -399,12 +365,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("mapa3").style.height = "400px";
       document.getElementById("mapa4").style.height = "80px";
       document.getElementById("mapa5").style.height = "115px";
-
-      document.getElementById("mapa1").style.visibility = "visible";
-      document.getElementById("mapa2").style.visibility = "visible";
-      document.getElementById("mapa3").style.visibility = "visible";
-      document.getElementById("mapa4").style.visibility = "visible";
-      document.getElementById("mapa5").style.visibility = "visible";
 
       document.body.style.backgroundColor = "#88ff6f";
       
