@@ -391,6 +391,8 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       
       body {
          background-color: #ffb970;
+         animation-name: colorDeFondo;
+         animation-duration: 0.5s;
       } 
 
       .container {
@@ -425,6 +427,12 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
     @keyframes animacionDeMenu {
      0% {top:200px; opacity: 0%}
      100% {top:0px; opacity: 100%}
+       
+    }
+
+    @keyframes animacionDeMenu {
+     0% {background-color: black;}
+     100% {background-color: #ffb970;}
        
     }
 
