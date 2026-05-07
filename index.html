@@ -42,7 +42,7 @@
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
 
 <div class="botones">
-   <input  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
+   <input  id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
    <div class="cut"></div>
    <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
 
@@ -348,6 +348,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("menu4").style.fontSize = "0px";
       document.getElementById("menu5").style.fontSize = "0px";
       document.getElementById("menu6").style.padding = "0px";
+      document.getElementById("menu6").style.visibility = "hidden";
       document.getElementById("menu7").style.padding = "0px";
       document.getElementById("menu8").style.fontSize = "0px";
       document.getElementById("menu8").style.padding = "0px";
