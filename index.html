@@ -3,7 +3,11 @@
 <html>
    
    <head>
-      
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
 <!-- Esto es el menú principal -->
 
 <meta name="viewport" content="width=device-width, initial-escale=1.0">
@@ -232,10 +236,8 @@ Contacto: Para cualquier duda sobre estos términos, puedes escribirme directame
 </head>
    
 </style>
-      
-      <div class="container">
-      <img id="menu3" style="animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative;" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Logo.png?raw=true" alt="Logo" width="332" height="210">
-      </div>
+
+<p id="menu3" style="font-size: 50px; text-align: center; font-family: Open Sans; font-weight: bold; animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative;" class="menu1">Tranqui Netwoork</p>
       
 <button onclick="entrarMapa()" id="menu4" class="comenzar" class="animacionMenu" style="animation-name: animacionDeMenu; animation-duration: 0.4s; position: relative;">Empezar</button>
 
@@ -396,6 +398,16 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          align-items: center;
          justify-content: center;
       }
+
+    
+      .open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
 
       .comenzar {
          background-color: #ffffff;
