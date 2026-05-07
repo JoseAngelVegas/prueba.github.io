@@ -488,7 +488,7 @@ document.body.style.backgroundColor = "#332b54";
 
 <button onclick="samConversacion()" id="inicioSam" class="ConversacionConSAM">Hablemos.</button>
 
-<button onclick="cerrarVivesSoloSam()" id="cerrarVivesSoloSam" class="ConversacionConSAM">Excelente</button>
+<button onclick="cerrarDialogoSam()" id="cerrarDialogoSam" class="ConversacionConSAM">Excelente</button>
    
 <style>
 
@@ -722,7 +722,7 @@ document.getElementById("salirConversacionSam2").style.padding = "0px";
 
 <script>
    
-   function cerrarVivesSoloSam() {
+   function cerrarDialogoSam() {
 
 document.getElementById("ConversacionSam1").style.padding = "15px";
 document.getElementById("ConversacionSam1").style.borderStyle = "solid";
@@ -737,11 +737,18 @@ document.getElementById("ConversacionSam4").style.padding = "15px";
 document.getElementById("ConversacionSam4").style.borderStyle = "solid";
 document.getElementById("ConversacionSam4").style.fontSize = "20px";
 
-document.getElementById("cerrarVivesSoloSam").style.fontSize = "0px";
-document.getElementById("cerrarVivesSoloSam").style.padding = "0px";
+document.getElementById("cerrarDialogoSam").style.fontSize = "0px";
+document.getElementById("cerrarDialogoSam").style.padding = "0px";
+
+document.getElementById("Respuesta1").style.fontSize = "0px";
+document.getElementById("Respuesta2").style.fontSize = "0px";
+document.getElementById("Respuesta3").style.fontSize = "0px";
+document.getElementById("Respuesta4").style.fontSize = "0px";
 
 document.getElementById("salirConversacionSam2").style.fontSize = "20px";
 document.getElementById("salirConversacionSam2").style.padding = "5px";
+
+   }
 
 </script>
 
