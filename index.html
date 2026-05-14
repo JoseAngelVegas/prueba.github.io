@@ -305,7 +305,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
        
     }
 
-     @keyframes animacionDeMenu {
+     @keyframes bounce {
      0% {top:200px; opacity: 0%}
      100% {top:0px; opacity: 100%}
        
@@ -372,7 +372,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    
 </script>
 
-<button onclick="salirSam()" id="salirSam" class="salir">Salir0</button>
+<button onclick="salirSam()" id="salirSam" class="botonesDeSalirSam">Salir0</button>
 <button onclick="salirConversacionSam()" id="salirConversacionSam" class="botonesDeSalirSam">Salir1</button>
 
 <img class="sprites" id="lupa1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Lupa.png?raw=true" width="0" height="0">
@@ -407,10 +407,8 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          align-items: center;
          margin: 0 auto;
          padding: 0px;
-         animation-name: animacionDeMenu;
-         animation-duration: 0.5s;
-        position: relative;
-      animation-play-state: paused;
+         position: relative;
+         animation: bounce 3s normal;
    }
 
    .sprites {
@@ -818,6 +816,11 @@ document.getElementById("mapa4").style.height = "80px";
 document.getElementById("mapa5").style.height = "115px";
 
 document.body.style.backgroundColor = "#88ff6f";
+
+var el = document.getElementById("salirConversacionSam");
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = null;
 
    }
 
