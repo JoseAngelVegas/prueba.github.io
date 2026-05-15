@@ -23,11 +23,11 @@
 
 <button onclick="cerrarOpciones()" id="cerrarOpciones" class="salir">Cerrar</button>
       
-<button onclick="abrirMenu()" id="menu0" class="mas" class="menu1" style="animation-name: animacionDeMenu; animation-duration: 0.1s; position: relative;">+</button>
+<button onclick="abrirMenu()" id="menu0" class="mas" class="menu1" style="animation: bounce 0.1s normal; position: relative;">+</button>
    
-<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold; animation-name: animacionDeMenu; animation-duration: 0.2s; position: relative;">Fase Alpha</p>
+<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold; animation: bounce 0.2s normal; position: relative;">Fase Alpha</p>
 
-<p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold; animation-name: animacionDeMenu; animation-duration: 0.3s; position: relative;">Creado por José Ángel Vegas</p>
+<p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold; animation: bounce 0.3s normal; position: relative;">Creado por José Ángel Vegas</p>
       
 </head>
    
@@ -35,9 +35,9 @@
 
 <p id="menu3" class="logo">TRANQUI NETWOORK</p>
       
-<button onclick="entrarMapa()" id="menu4" class="comenzar" class="animacionMenu" style="animation-name: animacionDeMenu; animation-duration: 0.4s; position: relative;">Empezar</button>
+<button onclick="entrarMapa()" id="menu4" class="comenzar" class="animacionMenu" style="animation-name: animacionDeMenu; animation: bounce 0.4s normal; position: relative;">Empezar</button>
 
-<p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold; animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative;" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
+<p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold; animation-name: animacionDeMenu; animation: bounce 0.5s normal; position: relative;" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
    
 <body>  
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
@@ -408,7 +408,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          margin: 0 auto;
          padding: 0px;
          position: relative;
-         animation: bounce 3s normal;
+         animation: bounce 0.5s normal;
    }
 
    .sprites {
