@@ -447,10 +447,10 @@ document.body.style.backgroundColor = "#332b54";
 
 <img class="iconos" id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
    
-<button onclick="vivesSoloSam()" id="ConversacionSam1" class="ConversacionConSAM" style="animation: bounce 0.3s normal; position: relative;">¿Vives en este lugar solo?</button>
-<button onclick="esteEsUnMundoSam()" id="ConversacionSam2" class="ConversacionConSAM" style="animation: bounce 0.4s normal; position: relative;">¿Este es un mundo digital?</button>
-<button onclick="comoFuncionaEsteMundoSam()" id="ConversacionSam3" class="ConversacionConSAM" style="animation: bounce 0.5s normal; position: relative;">¿Cómo funciona este mundo?</button>
-<button onclick="podriasDecirAlgoDeTiSam()" id="ConversacionSam4" class="ConversacionConSAM" style="animation: bounce 0.6s normal; position: relative;">¿Podrías decir algo de ti?</button>
+<button onclick="vivesSoloSam()" id="ConversacionSam1" class="ConversacionConSAM">¿Vives en este lugar solo?</button>
+<button onclick="esteEsUnMundoSam()" id="ConversacionSam2" class="ConversacionConSAM">¿Este es un mundo digital?</button>
+<button onclick="comoFuncionaEsteMundoSam()" id="ConversacionSam3" class="ConversacionConSAM">¿Cómo funciona este mundo?</button>
+<button onclick="podriasDecirAlgoDeTiSam()" id="ConversacionSam4" class="ConversacionConSAM">¿Podrías decir algo de ti?</button>
    
 <p class="respuestaSam" id="Respuesta1" style="font-size: 0px; text-align: center; font-weight: bold">No, vivo con mi hermano TIM... Y ellos.</p>
 <p class="respuestaSam" id="Respuesta2" style="font-size: 0px; text-align: center; font-weight: bold">Obvio, pero la vida no es muy buena...</p>
@@ -478,6 +478,8 @@ document.body.style.backgroundColor = "#332b54";
       padding: 0px;
       border-style: none;
       border-color: white;
+      animation: bounce 0.5s normal;
+      position: relative;
 
    }
 
@@ -540,9 +542,9 @@ document.body.style.backgroundColor = "#120d24";
    
    function samConversacion() {
 
-document.getElementById("ConversacionSam1").style.padding = "10px";
+document.getElementById("ConversacionSam1").style.padding = "1px";
 document.getElementById("ConversacionSam1").style.borderStyle = "solid";
-document.getElementById("ConversacionSam1").style.fontSize = "20px";
+document.getElementById("ConversacionSam1").style.fontSize = "1px";
 document.getElementById("ConversacionSam2").style.padding = "15px";
 document.getElementById("ConversacionSam2").style.borderStyle = "solid";
 document.getElementById("ConversacionSam2").style.fontSize = "20px";
