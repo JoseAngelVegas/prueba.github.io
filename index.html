@@ -542,9 +542,9 @@ document.body.style.backgroundColor = "#120d24";
    
    function samConversacion() {
 
-document.getElementById("ConversacionSam1").style.padding = "1px";
+document.getElementById("ConversacionSam1").style.padding = "15px";
 document.getElementById("ConversacionSam1").style.borderStyle = "solid";
-document.getElementById("ConversacionSam1").style.fontSize = "1px";
+document.getElementById("ConversacionSam1").style.fontSize = "20px";
 document.getElementById("ConversacionSam2").style.padding = "15px";
 document.getElementById("ConversacionSam2").style.borderStyle = "solid";
 document.getElementById("ConversacionSam2").style.fontSize = "20px";
@@ -763,6 +763,25 @@ document.getElementById("salirConversacionSam").style.padding = "5px";
 
 document.getElementById("salirConversacionSam").style.animationPlayState = "running";
 
+var el = document.getElementById("ConversacionSam1");
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = null;
+
+var el = document.getElementById("ConversacionSam2");
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = null;
+
+var el = document.getElementById("ConversacionSam3");
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = null;
+      
+var el = document.getElementById("ConversacionSam4");
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = null;
 
    }
 
