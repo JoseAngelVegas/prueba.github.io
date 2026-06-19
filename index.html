@@ -313,6 +313,17 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
        height: 0px;
     }
 
+    #pantallaGigante2 {
+       background-color: #141414;
+       text-align: center;
+       border-ridius: 2px;
+       width: 0px;
+       height: 0px;
+       position: relative;
+       bottom: 100px;  
+       
+    }
+
      @keyframes bounce {
      0% {top:200px; opacity: 0%}
      100% {top:0px; opacity: 100%}
@@ -344,6 +355,9 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
      
 <div id="pantallaGigante">
    <p id="textoDePantalla" style="color: #858ff1; font-size: 0px"> Cargando... </p>
+</div>
+
+<div id="pantallaGigante2">
 </div>
 
 <script>
