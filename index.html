@@ -305,6 +305,14 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
        
     }
 
+    div {
+       background-color:  #1c7d80;
+       text-align: center;
+       border-ridius: 2px;
+       width: 500px;
+       height: 500px;
+    }
+
      @keyframes bounce {
      0% {top:200px; opacity: 0%}
      100% {top:0px; opacity: 100%}
@@ -336,6 +344,45 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       <img class="estructuras" id="mapa5" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
      
 </div>
+
+<div>
+   <p id="pantalla" style="color: #858ff1; font-size: 20px"> </p>
+</div>
+
+<script>
+
+   const texto = [
+      { pantalla: ¡Momento de energía!" },
+      { pantalla: "¡Momento de calma!" },
+      { pantalla: "¡Momento de concentración!" },
+      { pantalla: "¡Momento de energía!" },
+      { pantalla: "¡Momento de calma!" },
+      { pantalla: "¡Momento de concentración!" },
+      { pantalla: "¡Momento de energía!" },
+      { pantalla: "¡Momento de calma!" },
+      { pantalla: "¡Momento de concentración!" },
+
+               ]
+
+   function actualizarTexto() {
+
+      const ahora = new Date();
+      const dia = ahora.getDay();
+
+      const bloqueDia = Math.floor (dia / 1);
+      
+      const seleccionActual = opciones[bloqueDia];
+
+      document.getElementById("pantalla").innerText = SeleccionActual.pantalla
+
+   }
+
+   actualizarTexto();
+
+   setInterval(actualizarTexto, 1000);
+
+</script>
+               
    
 <!-- Cosas del mapa -->
 
