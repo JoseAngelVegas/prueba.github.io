@@ -353,8 +353,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       <img class="estructuras" id="mapa4" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
       <img class="estructuras" id="mapa5" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
                 
-
-
+      <img onclick="periodico()" class="estructuras" id="periodico" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
 
 
    <div>
@@ -435,6 +434,9 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       document.getElementById("pantallaDeTexto").style.width = "320px";
       document.getElementById("pantallaDeTexto").style.height = "300px";
 
+      document.getElementById("periodico").style.width = "80px";
+      document.getElementById("periodico").style.height = "115px";
+
       
    }
    
@@ -486,6 +488,26 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    }
    
 </style>
+
+<script>
+
+   function periodico() {
+document.getElementById("mapa1").style.width = "0px";
+document.getElementById("mapa1").style.height = "0px";
+document.getElementById("mapa2").style.width = "0px";
+document.getElementById("mapa2").style.height = "0px";
+document.getElementById("mapa3").style.width = "0px";
+document.getElementById("mapa3").style.height = "0px";
+document.getElementById("mapa4").style.width = "0px";
+document.getElementById("mapa4").style.height = "0px";
+document.getElementById("mapa5").style.width = "0px";
+document.getElementById("mapa5").style.height = "0px";
+
+document.getElementById("periodico").style.width = "0px";
+document.getElementById("periodico").style.height = "0px";
+
+   }
+      
 
 <script>
 
