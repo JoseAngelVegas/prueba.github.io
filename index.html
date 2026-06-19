@@ -356,17 +356,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       { pantalla: "¡Momento de energía!" },
       { pantalla: "¡Momento de calma!" },
       { pantalla: "¡Momento de concentración!" },
-      { pantalla: "¡Momento de energía!" },
-      { pantalla: "¡Momento de calma!" },
-      { pantalla: "¡Momento de concentración!" },
-      { pantalla: "¡Momento de calma!" },
-      { pantalla: "¡Momento de concentración!" },
-      { pantalla: "¡Momento de energía!" },
-      { pantalla: "¡Momento de calma!" },
-      { pantalla: "¡Momento de concentración!" },
-      { pantalla: "¡Momento de energía!" },
-      { pantalla: "¡Momento de calma!" },
-      { pantalla: "¡Momento de concentración!" },
 
                ]
 
@@ -379,7 +368,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       
       const seleccionActual = texto[bloqueDia];
 
-      document.getElementById("pantalla").innerText = seleccionActual.pantalla;
+      document.getElementById("textoDePantalla").innerText = seleccionActual.pantalla;
 
    }
 
