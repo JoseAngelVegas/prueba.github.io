@@ -369,11 +369,11 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       const ahora = new Date();
       const dia = ahora.getDay();
 
-      const bloqueDia = Math.floor (dia / 1);
+      const bloqueDia = Math.floor(dia / 1);
       
       const seleccionActual = opciones[bloqueDia];
 
-      document.getElementById("pantalla").innerText = SeleccionActual.pantalla
+      document.getElementById("pantalla").innerText = seleccionActual.pantalla
 
    }
 
