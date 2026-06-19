@@ -358,11 +358,10 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 
    <div>
    <p id="textoDePantalla" style="color: #858ff1; font-size: 0px; position: relative; top: 240px; left: 40px"> Cargando... </p>
-   
       <img class="estructuras" id="pantallaDeTexto" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Pantalla.png?raw=true" width="0" height="0">
    </div>
    
-
+<img onclick="escribirMaquinaDeEscribir()" class="sprites" id="maquinaDeEscribir" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
 
 
 
@@ -505,6 +504,15 @@ document.getElementById("mapa5").style.height = "0px";
 
 document.getElementById("periodico").style.width = "0px";
 document.getElementById("periodico").style.height = "0px";
+
+document.getElementById("textoDePantalla").style.fontSize = "0px";
+
+document.getElementById("pantallaDeTexto").style.width = "0px";
+document.getElementById("pantallaDeTexto").style.height = "0px";
+
+document.getElementById("maquinaDeEscribir").style.width = "120px";
+document.getElementById("maquinaDeEscribir").style.height = "120px";
+
 
    }
 
