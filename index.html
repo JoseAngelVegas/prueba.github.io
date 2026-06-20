@@ -312,24 +312,15 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
        
     }
 
-    #pantallaGigante {
-       background-color: #141414;
-       text-align: center;
-       border-ridius: 2px;
+    .papel {
+
        width: 0px;
        height: 0px;
+       background-color: white;
+
     }
 
-    #pantallaGigante2 {
-       background-color: #141414;
-       text-align: center;
-       border-ridius: 2px;
-       width: 0px;
-       height: 0px;
-       position: relative;
-       bottom: 100px;  
        
-    }
 
      @keyframes bounce {
      0% {top:200px; opacity: 0%}
@@ -343,7 +334,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
        
     }
        
-         @media only screen and (max-width:500px) {
+   @media only screen and (max-width:500px) {
             .button, .submit, .mas, .input {
                width: 40%;
             }
@@ -369,18 +360,31 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    </div>
    
 <img onclick="escribirMaquinaDeEscribir()" class="sprites" id="maquinaDeEscribir" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
+<img onclick="verPeriodico()" class="sprites" id="verPeriodico" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
 
 
 
 <script>
 
    const texto = [
-      { pantalla: "¡Momento de energía!" },
-      { pantalla: "¡Momento de calma!" },
-      { pantalla: "¡Momento de concentración!" },
-      { pantalla: "¡Momento de energía!" },
-      { pantalla: "¡Momento de calma!" },
-      { pantalla: "¡Momento de concentración!" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
 
                ]
 
@@ -394,6 +398,8 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       const seleccionActual = texto[bloqueDia];
 
       document.getElementById("textoDePantalla").innerText = seleccionActual.pantalla;
+      document.getElementById("encabezado").innerText = seleccionActual.encabezado;
+      document.getElementById("parrafo").innerText = seleccionActual.parrafo;
 
    }
 
@@ -513,11 +519,6 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    
 </style>
 
-
-   <button id="menuuu" type="submit" class="submit" class="menu1"  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative>Enviar publicación</button>
-
-   </script>
-
 <script>
 
    function periodico() {
@@ -561,6 +562,36 @@ document.getElementById("maquinaDeEscribir").style.height = "0px";
 document.getElementById("parrafo").style.padding = "5px";
 document.getElementById("parrafo").style.fontSize = "15px";
 document.getElementById("parrafo").style.visibility = "visible";
+
+}
+
+   </script>
+
+   <div id="papel"> 
+      <p id="encabezado" style="color: black; font-size: 0px;"> Cargando... </p>
+      <p id="parrafo" style="color: black; font-size: 0px;"> Cargando... </p>
+   </div>
+
+<style>
+
+   
+
+</style>
+
+<script>
+
+function verPeriodico() {
+
+document.getElementById("maquinaDeEscribir").style.width = "0px";
+document.getElementById("maquinaDeEscribir").style.height = "0px";
+
+document.getElementById("papel").style.height = "50px";
+document.getElementById("papel").style.width = "50px";
+
+document.getElementById("encabezado").style.fontSize = "20px";
+document.getElementById("parrafo").style.fontSize = "20px";
+
+
 
 }
 
