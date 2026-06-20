@@ -44,7 +44,12 @@
 
 <div class="botones">
    <input  id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
+
+    <input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
+   <input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
+   
    <div class="cut"></div>
+   
    <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
 
 </div>
@@ -506,31 +511,8 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    
 </style>
 
-<form name="texto" method="prensa" action="https://script.google.com/macros/s/AKfycbw7tEho_xfJU_5zuuRwMbDl3ba2FJvLiepHMeJmgZG4fN5_otkWAuqo0w7dTWvEaPhf/exec">
-
-<div class="botones2">
-   
-   <input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
-   <input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
-
-</div>
 
    <button id="menuuu" type="submit" class="submit" class="menu1"  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative>Enviar publicación</button>
-
-</form>
-   
-   <script>
-
- const scriptUrl2 = 'https://script.google.com/macros/s/AKfycbw7tEho_xfJU_5zuuRwMbDl3ba2FJvLiepHMeJmgZG4fN5_otkWAuqo0w7dTWvEaPhf/exec';
-   
-const form = document.forms['prensa'];
-
-   form.addEventListener('submit', e => {
-      e.preventDefault()
-      
-fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
-      
-   })
 
    </script>
 
