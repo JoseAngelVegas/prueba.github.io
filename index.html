@@ -485,16 +485,31 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
          align-items: center;
          margin: 0 auto;
    }
+
+   .escribirPeriodico {
+
+        font-size: 0px;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+         color: black;
+         padding: 0px;
+         background-color: white;
+         margin: 0 auto;
+         border-radius: 100px;
+
+   }
    
 </style>
 
-<div class="botones">
+<div class="botones2">
    
-   <input  id="encabezado" name="Encabezado" class="input" type="text" placeholder=" " maxlenght="50"/>
-   <input  id="parrafo" name="Parrafo" class="input" type="text" placeholder=" " maxlenght="100"/>
+   <input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
+   <input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
    
    <div class="cut"></div>
    <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
+
 
 </div>
 
@@ -523,8 +538,8 @@ document.getElementById("pantallaDeTexto").style.height = "0px";
 document.getElementById("maquinaDeEscribir").style.width = "120px";
 document.getElementById("maquinaDeEscribir").style.height = "120px";
 
-document.getElementById("encabezado").style.padding = "0px";
-document.getElementById("parrafo").style.height = "0px";
+document.getElementById("encabezado").style.padding = "5px";
+document.getElementById("encabezado").style.fontSize = "20px";
 
 
    }
