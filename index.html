@@ -488,6 +488,16 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    
 </style>
 
+<div class="botones">
+   
+   <input  id="encabezado" name="Encabezado" class="input" type="text" placeholder=" " maxlenght="50"/>
+   <input  id="parrafo" name="Parrafo" class="input" type="text" placeholder=" " maxlenght="100"/>
+   
+   <div class="cut"></div>
+   <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
+
+</div>
+
 <script>
 
    function periodico() {
@@ -512,6 +522,9 @@ document.getElementById("pantallaDeTexto").style.height = "0px";
 
 document.getElementById("maquinaDeEscribir").style.width = "120px";
 document.getElementById("maquinaDeEscribir").style.height = "120px";
+
+document.getElementById("encabezado").style.padding = "0px";
+document.getElementById("parrafo").style.height = "0px";
 
 
    }
