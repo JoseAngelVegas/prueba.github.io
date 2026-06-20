@@ -506,16 +506,33 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
    
 </style>
 
+<form name="texto" method="prensa" action="https://script.google.com/macros/s/AKfycbw7_Ao_EyWt6OZ6mdS_KUR6ez34WbVm1P8ngeKfOEnee0VqI5d5pjIe7DPFhw26YXU7/exec">
+
 <div class="botones2">
    
    <input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
    <input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
-   
-   <div class="cut"></div>
-   <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
-
 
 </div>
+
+   <button id="menuuu" type="submit" class="submit" class="menu1"  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative>Enviar publicación</button>
+
+</form>
+   
+   <script>
+
+ const scriptUrl2 = 'https://script.google.com/macros/s/AKfycbw7_Ao_EyWt6OZ6mdS_KUR6ez34WbVm1P8ngeKfOEnee0VqI5d5pjIe7DPFhw26YXU7/exec';
+   
+const form = document.forms['prensa'];
+
+   form.addEventListener('submit', e => {
+      e.preventDefault()
+      
+fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
+      
+   })
+
+   </script>
 
 <script>
 
