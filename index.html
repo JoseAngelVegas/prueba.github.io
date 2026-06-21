@@ -52,73 +52,24 @@
 </body>
 
 <script>
+   
    function abrirMenu() {
-      
-
-      document.getElementById("opciones1").style.fontSize = "20px";
-      document.getElementById("opciones1").style.padding = "8px";
-      document.getElementById("opciones2").style.fontSize = "20px";
-      document.getElementById("opciones2").style.padding = "8px";
-      document.getElementById("opciones3").style.fontSize = "20px";
-      document.getElementById("opciones3").style.padding = "8px";
-      document.getElementById("opciones4").style.fontSize = "20px";
-      document.getElementById("opciones4").style.padding = "8px";
-      document.getElementById("cerrarMenu").style.fontSize = "20px";
-      document.getElementById("cerrarMenu").style.padding = "5px";
-      
    }
-   
-</script>
-
-<script>
-   
+      
    function cerrarMenu() {
-      document.getElementById("menu0").style.fontSize = "20px";
-      document.getElementById("menu1").style.fontSize = "12px";
-      document.getElementById("menu2").style.fontSize = "12px";
-      document.getElementById("menu3").style.width = "332px";
-      document.getElementById("menu3").style.height = "210px";
-      document.getElementById("menu4").style.padding = "15px";
-      document.getElementById("menu4").style.fontSize = "20px";
-      document.getElementById("menu5").style.fontSize = "12px";
-      document.getElementById("menu6").style.visibility = "visible";
-      document.getElementById("menu6").style.padding = "5px";
-      document.getElementById("menu7").style.padding = "15px";
-      document.getElementById("menu8").style.fontSize = "20px";
-      document.getElementById("menu8").style.padding = "5px";
-         
-      document.getElementById("opciones1").style.fontSize = "0px";
-      document.getElementById("opciones1").style.padding = "0px";
-      document.getElementById("opciones2").style.fontSize = "0px";
-      document.getElementById("opciones2").style.padding = "0px";
-      document.getElementById("opciones3").style.fontSize = "0px";
-      document.getElementById("opciones3").style.padding = "0px";
-      document.getElementById("opciones4").style.fontSize = "0px";
-      document.getElementById("opciones4").style.padding = "0px";
-      document.getElementById("cerrarMenu").style.fontSize = "0px";
-      document.getElementById("cerrarMenu").style.padding = "0px";
-
    }
    
-</script>
-
-<!-- Esto es el menu y cosas así -->
-
-<script>
    function terminosYCondiciones() {
-
-      document.getElementById("opciones1").style.fontSize = "0px";
-      document.getElementById("opciones1").style.padding = "0px";
-      document.getElementById("opciones2").style.fontSize = "0px";
-      document.getElementById("opciones2").style.padding = "0px";
-      document.getElementById("opciones3").style.fontSize = "0px";
-      document.getElementById("opciones3").style.padding = "0px";
-      document.getElementById("opciones4").style.fontSize = "0px";
-      document.getElementById("opciones4").style.padding = "0px";
-      document.getElementById("cerrarMenu").style.fontSize = "0px";
-      document.getElementById("cerrarMenu").style.padding = "0px";
-      
    }
+
+   function entrarMapa() {
+      
+     const cerrarInicio = document.querySelectorAll(".inicio");
+      for (let i = 0; i < cerrarInicio.length i++) {
+         cerrarInicio[i].style.fontSize = "0px";
+      }
+   }
+   
 
 </script>
       
@@ -385,51 +336,6 @@
 
 </script>
                
-   
-<!-- Cosas del mapa -->
-
-<script>
-   function entrarMapa() {
-      document.getElementById("menu0").style.fontSize = "0px";
-      document.getElementById("menu1").style.fontSize = "0px";
-      document.getElementById("menu2").style.fontSize = "0px";
-      document.getElementById("menu3").style.fontSize = "0px";
-      document.getElementById("menu4").style.padding = "0px";
-      document.getElementById("menu4").style.fontSize = "0px";
-      document.getElementById("menu5").style.fontSize = "0px";
-      document.getElementById("menu6").style.padding = "0px";
-      document.getElementById("menu6").style.visibility = "hidden";
-      document.getElementById("menu7").style.padding = "0px";
-      document.getElementById("menu8").style.fontSize = "0px";
-      document.getElementById("menu8").style.padding = "0px";
-      
-      document.getElementById("mapa1").style.width = "80px";
-      document.getElementById("mapa2").style.width = "80px";
-      document.getElementById("mapa3").style.width = "150px";
-      document.getElementById("mapa4").style.width = "80px";
-      document.getElementById("mapa5").style.width = "80px";
-
-      document.getElementById("mapa1").style.height = "80px";
-      document.getElementById("mapa2").style.height = "80px";
-      document.getElementById("mapa3").style.height = "400px";
-      document.getElementById("mapa4").style.height = "80px";
-      document.getElementById("mapa5").style.height = "115px";
-      
-      document.body.style.backgroundColor = "#88ff6f";
-
-      document.getElementById("textoDePantalla").style.fontSize = "20px";
-
-      document.getElementById("pantallaDeTexto").style.width = "320px";
-      document.getElementById("pantallaDeTexto").style.height = "300px";
-
-      document.getElementById("periodico").style.width = "80px";
-      document.getElementById("periodico").style.height = "115px";
-
-      
-   }
-   
-</script>
-
 <button onclick="salirSam()" id="salirSam" class="botonesDeSalirSam">Salir0</button>
 <button onclick="salirConversacionSam()" id="salirConversacionSam" class="botonesDeSalirSam">Salir1</button>
 
