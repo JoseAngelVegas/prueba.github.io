@@ -23,7 +23,7 @@
    
 <p class="inicio">TRANQUI NETWOORK</p>
       
-<button onclick="entrarMapa()" class="comenzar" class="inicio">Empezar</button>
+<button onclick="entrarMapa()" class="comenzar inicio">Empezar</button>
 
 <p class="inicio">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
    
@@ -39,9 +39,9 @@
 
 <label for="publicacion" class="placeholder" class="inicio"></label>
 
-<button type="submit" class="submit" class="inicio">Enviar publicación</button>
+<button type="submit" class="submit inicio">Enviar publicación</button>
 
-<button type="submit" class="submit" class="inicio">Enviar publicación</button>
+<button type="submit" class="submit inicio">Enviar publicación</button>
 
 <script>
    
@@ -56,7 +56,7 @@
 
    function entrarMapa() {
       
-     const cerrarInicio = document.querySelectorAll(".inicio .submit .comenzar");
+     const cerrarInicio = document.querySelectorAll(".inicio.submit.comenzar");
       for (let i = 0; i < cerrarInicio.length; i++) {
          cerrarInicio[i].style.fontSize = "0px";
       }
