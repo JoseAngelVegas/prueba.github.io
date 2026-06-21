@@ -13,7 +13,7 @@
 
 <p onclick="cerrarOpciones()" class="botonDeMenu">Cerrar</p>
       
-<p onclick="abrirMenu()">+</p>
+<p onclick="abrirMenu()" class="inicio">+</p>
    
 <p class="inicio">Fase Alpha</p>
 
@@ -21,7 +21,7 @@
       
 </head>
    
-<p class="logo" class="logo" class="inicio">TRANQUI NETWOORK</p>
+<p class="inicio">TRANQUI NETWOORK</p>
       
 <button onclick="entrarMapa()" class="comenzar" class="inicio">Empezar</button>
 
@@ -216,14 +216,6 @@ document.getElementById("parrafo").style.visibility = "visible";
 
      <p id="encabezado" class="textoDePeriodico"> Cargando... </p>
       <p id="parrafo" class="textoDePeriodico"> Cargando... </p>
-
-   <style>
-
-      .textoDePeriodico {
-         font-size: 12px;
-      }
-
-      </style>
 
 <script>
 
@@ -695,6 +687,11 @@ var el = document.getElementById("salirConversacionSam");
 
     }
 
+   
+      .textoDePeriodico {
+         font-size: 12px;
+      }
+
       .comenzar {
          background-color: #ffffff;
          font-size: 20px;
@@ -723,15 +720,6 @@ var el = document.getElementById("salirConversacionSam");
          animation-duration: 0.7s;
       }
       
-      .mas {                  
-         font-size: 20px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         padding: 0px;
-         background: none;
-      }
 
     .input {
         font-size: 20px;
@@ -773,31 +761,6 @@ var el = document.getElementById("salirConversacionSam");
        
     }
 
-     .textoOpciones1 {
-         font-size: 0px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         color: black;
-         background-color: #ffb970;
-         margin: 0 auto;
-         padding: 0px;
-
-     }
-
-    .textoOpciones2 {
-         font-size: 0px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         color: black;
-         background-color: #ffb970;
-         margin: 0 auto;
-         padding: 0px;
-
-     }
 
     .cerrarMenu {
          background-color: #ffffff;
