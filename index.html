@@ -2,92 +2,58 @@
 
 <html>
    
-   <head>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<head>
 
 <!-- Esto es el menú principal -->
-
-<meta name="viewport" content="width=device-width, initial-escale=1.0">
 
 <button onclick="queEsTN()" id="opciones1" class="opciones">¿Qué es Tranqui Netwoork?</button>
 <button onclick="contacto()" id="opciones2" class="opciones">Contácto</button>
 <button onclick="terminosYCondiciones()" id="opciones3" class="opciones">Términos Y Condiciones</button>
 <button onclick="politicaDePrivacidad()" id="opciones4" class="opciones">Política De Privacidad</button>
    
-<p id="politicaDePrivacidad" style="font-size: 0px; text-align: center; font-weight: bold"></p>
+<button onclick="cerrarMenu()" class="botonDeMenu">Cerrar</button>
 
-<button onclick="cerrarMenu()" id="cerrarMenu" class="cerrarMenu">Cerrar</button>
-
-<button onclick="cerrarOpciones()" id="cerrarOpciones" class="salir">Cerrar</button>
+<button onclick="cerrarOpciones()" class="botonDeMenu">Cerrar</button>
       
-<button onclick="abrirMenu()" id="menu0" class="mas" class="menu1" style="animation: bounce 0.1s normal; position: relative;">+</button>
+<button onclick="abrirMenu()" id="mas">+</button>
    
-<p id="menu1" style="font-size: 12px; text-align: center; font-weight: bold; animation: bounce 0.2s normal; position: relative;">Fase Alpha</p>
+<p class="inicio">Fase Alpha</p>
 
-<p id="menu2" style="font-size: 12px; text-align: center; font-weight: bold; animation: bounce 0.3s normal; position: relative;">Creado por José Ángel Vegas</p>
+<p class="inicio">Creado por José Ángel Vegas</p>
       
 </head>
    
-</style>
-
-<p id="menu3" class="logo">TRANQUI NETWOORK</p>
+<p class="logo" class="inicio">TRANQUI NETWOORK</p>
       
-<button onclick="entrarMapa()" id="menu4" class="comenzar" class="animacionMenu" style="animation-name: animacionDeMenu; animation: bounce 0.4s normal; position: relative;">Empezar</button>
+<button onclick="entrarMapa()" id="botonDeInicio" class="comenzar">Empezar</button>
 
-<p id="menu5" style="font-size: 12px; text-align: center; font-weight: bold; animation-name: animacionDeMenu; animation: bounce 0.5s normal; position: relative;" class="menu1">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
+<p id="menu5">"-Esto me Tranqui-Netwoorkió mis expectativas."</p>
    
 <body>  
 <form name="formulario" method="post" action="https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec">
 
 <div class="botones">
-   <input  id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
 
-    <input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
-   <input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
-   
-   <div class="cut"></div>
-   
-   <label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
+<input id="menu6" name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
+
+<input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
+<input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
+
+<label id="menu7" for="publicacion" class="placeholder" class="menu1"></label>
 
 </div>
 
-      <button id="menu8" type="submit" class="submit" class="menu1"  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative>Enviar publicación</button>
+<button id="menu8" type="submit" class="submit" class="menu1"  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative>Enviar publicación</button>
 
-         <button id="menu45" type="submit" class="submit" class="menu1"  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative>Enviar publicación</button>
+<button id="menu45" type="submit" class="submit" class="menu1"  animation-name: animacionDeMenu; animation-duration: 0.5s; position: relative>Enviar publicación</button>
 
 </form>
 
-<script>
-   const scriptUrl = 'https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec';
-   
-const form = document.forms['formulario'];
-
-   form.addEventListener('submit', e => {
-      e.preventDefault()
-      
-fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
-      
-   })
-</script>
+</body>
 
 <script>
    function abrirMenu() {
-      document.getElementById("menu0").style.fontSize = "0px";
-      document.getElementById("menu1").style.fontSize = "0px";
-      document.getElementById("menu2").style.fontSize = "0px";
-      document.getElementById("menu3").style.width = "0px";
-      document.getElementById("menu3").style.height = "0px";
-      document.getElementById("menu4").style.padding = "0px";
-      document.getElementById("menu4").style.fontSize = "0px";
-      document.getElementById("menu5").style.fontSize = "0px";
-      document.getElementById("menu6").style.visibility = "hidden";
-      document.getElementById("menu6").style.padding = "0px";
-      document.getElementById("menu7").style.padding = "0px";
-      document.getElementById("menu8").style.fontSize = "0px";
-      document.getElementById("menu8").style.padding = "0px";
+      
 
       document.getElementById("opciones1").style.fontSize = "20px";
       document.getElementById("opciones1").style.padding = "8px";
@@ -180,6 +146,16 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
   font-variation-settings:
   "wdth" 100;
 }
+
+    .textoInicio {
+
+       font-size: 12px;
+       text-align: center;
+       font-weight: bold;
+       animation: bounce 0.2s normal;
+       position: relative;"
+
+    }
 
     .logo {
       font-size: 50px;
@@ -1067,6 +1043,25 @@ var el = document.getElementById("salirConversacionSam");
    }
 
 </script>
+
+<script>
+   const scriptUrl = 'https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec';
+   
+const form = document.forms['formulario'];
+
+   form.addEventListener('submit', e => {
+      e.preventDefault()
+      
+fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
+      
+   })
+</script>
+
+<meta name="viewport" content="width=device-width, initial-escale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
 
 </body>
 </html>
