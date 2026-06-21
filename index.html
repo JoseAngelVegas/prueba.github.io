@@ -4,8 +4,6 @@
    
 <head>
 
-<!-- Esto es el menú principal -->
-
 <button onclick="queEsTN()" id="opciones1" class="opciones">¿Qué es Tranqui Netwoork?</button>
 <button onclick="contacto()" id="opciones2" class="opciones">Contácto</button>
 <button onclick="terminosYCondiciones()" id="opciones3" class="opciones">Términos Y Condiciones</button>
@@ -39,7 +37,7 @@
 <input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
 <input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
 
-<label for="publicacion" class="placeholder" class="inicio"</label>
+<label for="publicacion" class="placeholder" class="inicio"></label>
 
 <button type="submit" class="submit" class="inicio">Enviar publicación</button>
 
@@ -68,179 +66,6 @@
       
 
  <style>
-      
-      body {
-         background-color: #ffb970;
-         animation-name: colorDeFondo;
-         animation-duration: 1s;
-      } 
-
-      .container {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
-
-    
-      .open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-  "wdth" 100;
-}
-
-    .textoInicio {
-
-       font-size: 12px;
-       text-align: center;
-       font-weight: bold;
-       animation: bounce 0.2s normal;
-       position: relative;"
-
-    }
-
-    .logo {
-      font-size: 50px;
-      text-align: center;
-      color: #c8852d;
-      font-family: Open Sans;
-      font-weight: bold;
-      animation-name: animacionDeMenu;
-      animation-duration: 0.5s;
-      position: relative;
-      -webkit-text-stroke: 1px #342211;
-       letter-spacing: -1.8px;
-
-    }
-
-      .comenzar {
-         background-color: #ffffff;
-         font-size: 20px;
-         font-weight: bold;
-         border: none;
-         border-radius: 12px;
-         display: flex;
-         align-items: center;
-         margin: 0 auto;
-         padding: 15px;
-      }
-
-      .submit {
-         background-color: #5c3f00;
-         color: #b28c00;
-         font-size: 20px;
-         font-weight: bold;
-         border: none;
-         border-radius: 50px;
-         display: flex;
-         align-items: center;
-         margin: 0 auto;
-         padding: 5px;
-         position: relative;
-         animation-name: animacionDeMenu;
-         animation-duration: 0.7s;
-      }
-      
-      .mas {                  
-         font-size: 20px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         padding: 0px;
-         background: none;
-      }
-
-    .input {
-        font-size: 20px;
-         font-weight: bold;
-         display: flex;
-         align-items: center;
-         border-style: solid;
-         border-color: #c8852d;
-         color: black;
-         padding: 5px;
-         background-color: #df9739;
-         margin: 0 auto;
-         border-radius: 100px;
-         animation-name: animacionDeMenu;
-         animation-duration: 0.6s;
-         position: relative;
-    }
-      
-      .interactivo {
-         font-size: 20px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         color: black;
-         background-color: #ffb970;
-}
-
-    .opciones {
-         font-size: 0px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         color: black;
-         background-color: #ffb970;
-         margin: 0 auto;
-         padding: 0px;
-       
-    }
-
-     .textoOpciones1 {
-         font-size: 0px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         color: black;
-         background-color: #ffb970;
-         margin: 0 auto;
-         padding: 0px;
-
-     }
-
-    .textoOpciones2 {
-         font-size: 0px;
-         font-weight: bold;
-         display: flex;
-         align-items: center; 
-         border: none;
-         color: black;
-         background-color: #ffb970;
-         margin: 0 auto;
-         padding: 0px;
-
-     }
-
-    .cerrarMenu {
-         background-color: #ffffff;
-         font-size: 0px;
-         font-weight: bold;
-         border: none;
-         border-radius: 12px;
-         display: flex;
-         align-items: center;
-         margin: 0 auto;
-         padding: 0px;
-       
-    }
-
-    .papel {
-
-       width: 0px;
-       height: 0px;
-       background-color: white;
-
-    }
-
-       
 
      @keyframes bounce {
      0% {top:200px; opacity: 0%}
@@ -334,65 +159,6 @@
 
 <img class="sprites" id="lupa1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Lupa.png?raw=true" width="0" height="0">
 <img onclick="samConversacionMenu()" class="sprites" id="SAM" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
-   
-<style>
-
-   .estructuras {
-      margin: 0 auto;
-      align-items: center;
-   }
-   
-   .salir {
-         background-color: #ffffff;
-         font-size: 0px;
-         font-weight: bold;
-         border: none;
-         border-radius: 12px;
-         display: flex;
-         align-items: center;
-         margin: 0 auto;
-         padding: 0px;
-   }
-
-   .botonesDeSalirSam {
-      background-color: #ffffff;
-         font-size: 0px;
-         font-weight: bold;
-         border: none;
-         border-radius: 12px;
-         display: flex;
-         align-items: center;
-         margin: 0 auto;
-         padding: 0px;
-         position: relative;
-         animation: bounce 0.5s normal;
-   }
-
-   .sprites {
-         display: flex;
-         align-items: center;
-         margin: 0 auto;
-   }
-
-   .escribirPeriodico {
-
-        font-size: 0px;
-         font-weight: bold;
-         display: flex;
-         align-items: center;
-        visibility: hidden;
-         color: black;
-         padding: 0px;
-         background-color: white;
-         margin: 0 auto;
-         border-radius: 100px;
-         border-style: solid;
-         border-color: #c8852d;
-      
-
-   }
-   
-</style>
 
 <script>
 
@@ -520,52 +286,6 @@ document.body.style.backgroundColor = "#332b54";
 <button onclick="samConversacion()" id="inicioSam" class="ConversacionConSAM">Hablemos.</button>
 
 <button onclick="cerrarDialogoSam()" id="cerrarDialogoSam" class="ConversacionConSAM">Excelente</button>
-   
-<style>
-
-   .ConversacionConSAM {
-
-      background-color: #cbb2ff;
-      font-size: 0px;
-      font-weight: bold;
-      border: none;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0px;
-      border-style: none;
-      border-color: white;
-      animation: bounce 0.5s normal;
-      position: relative;
-
-   }
-
-   .iconos {
-
-      display: flex;
-      align-items: center;
-      margin: 0 auto;
-
-   }
-
-    .respuestaSam {
-      font-color: black;
-      background-color: white;
-      font-size: 0px;
-      font-weight: bold;
-      border: none;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0px;
-      position: relative;
-      animation: bounce 0.5s normal;
-
-   }
-      
-</style>
 
 <script>
 
@@ -942,6 +662,252 @@ var el = document.getElementById("salirConversacionSam");
    }
 
 </script>
+
+<style>
+
+       body {
+         background-color: #ffb970;
+         animation-name: colorDeFondo;
+         animation-duration: 1s;
+      } 
+
+      .container {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+    
+      .open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+    }
+
+      .comenzar {
+         background-color: #ffffff;
+         font-size: 20px;
+         font-weight: bold;
+         border: none;
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         padding: 15px;
+      }
+
+      .submit {
+         background-color: #5c3f00;
+         color: #b28c00;
+         font-size: 20px;
+         font-weight: bold;
+         border: none;
+         border-radius: 50px;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         padding: 5px;
+         position: relative;
+         animation-name: animacionDeMenu;
+         animation-duration: 0.7s;
+      }
+      
+      .mas {                  
+         font-size: 20px;
+         font-weight: bold;
+         display: flex;
+         align-items: center; 
+         border: none;
+         padding: 0px;
+         background: none;
+      }
+
+    .input {
+        font-size: 20px;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+         border-style: solid;
+         border-color: #c8852d;
+         color: black;
+         padding: 5px;
+         background-color: #df9739;
+         margin: 0 auto;
+         border-radius: 100px;
+         animation-name: animacionDeMenu;
+         animation-duration: 0.6s;
+         position: relative;
+    }
+      
+      .interactivo {
+         font-size: 20px;
+         font-weight: bold;
+         display: flex;
+         align-items: center; 
+         border: none;
+         color: black;
+         background-color: #ffb970;
+}
+
+    .opciones {
+         font-size: 0px;
+         font-weight: bold;
+         display: flex;
+         align-items: center; 
+         border: none;
+         color: black;
+         background-color: #ffb970;
+         margin: 0 auto;
+         padding: 0px;
+       
+    }
+
+     .textoOpciones1 {
+         font-size: 0px;
+         font-weight: bold;
+         display: flex;
+         align-items: center; 
+         border: none;
+         color: black;
+         background-color: #ffb970;
+         margin: 0 auto;
+         padding: 0px;
+
+     }
+
+    .textoOpciones2 {
+         font-size: 0px;
+         font-weight: bold;
+         display: flex;
+         align-items: center; 
+         border: none;
+         color: black;
+         background-color: #ffb970;
+         margin: 0 auto;
+         padding: 0px;
+
+     }
+
+    .cerrarMenu {
+         background-color: #ffffff;
+         font-size: 0px;
+         font-weight: bold;
+         border: none;
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         padding: 0px;
+       
+    }
+
+    .papel {
+
+       width: 0px;
+       height: 0px;
+       background-color: white;
+
+    }
+
+   .ConversacionConSAM {
+
+      background-color: #cbb2ff;
+      font-size: 0px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0px;
+      border-style: none;
+      border-color: white;
+      animation: bounce 0.5s normal;
+      position: relative;
+
+   }
+
+   .iconos {
+
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+
+   }
+
+    .respuestaSam {
+      font-color: black;
+      background-color: white;
+      font-size: 0px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0px;
+      position: relative;
+      animation: bounce 0.5s normal;
+
+   }
+
+   .estructuras {
+      margin: 0 auto;
+      align-items: center;
+   }
+   
+   .salir {
+         background-color: #ffffff;
+         font-size: 0px;
+         font-weight: bold;
+         border: none;
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         padding: 0px;
+   }
+
+   .botonesDeSalirSam {
+      background-color: #ffffff;
+         font-size: 0px;
+         font-weight: bold;
+         border: none;
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+         padding: 0px;
+         position: relative;
+         animation: bounce 0.5s normal;
+   }
+
+   .sprites {
+         display: flex;
+         align-items: center;
+         margin: 0 auto;
+   }
+
+   .escribirPeriodico {
+
+        font-size: 0px;
+         font-weight: bold;
+         display: flex;
+         align-items: center;
+        visibility: hidden;
+         color: black;
+         padding: 0px;
+         background-color: white;
+         margin: 0 auto;
+         border-radius: 100px;
+         border-style: solid;
+         border-color: #c8852d;
+
+   }
+   
+</style>
 
 <script>
    const scriptUrl = 'https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec';
