@@ -63,27 +63,31 @@
          
       }
 
-   const mostrarEstructuras = document.querySelectorAll(".estructuras");
-      for (let i = 0; i < mostrarEstructuras.length; i++) {
-         mostrarEstructuras[i].style.width = "50px";
-         mostrarEstructuras[i].style.height = "50px";
+      document.getElementById("casaDeSam").style.height = "80px";
+      document.getElementById("casaDeSam").style.width = "80px";
+      document.getElementById("casaDeSam").style.height = "80px";
+      document.getElementById("casaDeTim").style.width = "80px";
 
       document.body.style.backgroundColor = "#88ff6f";
 
    }
+
+   function casaDeSam() {
+      
+     const cerrarEstructuras = document.querySelectorAll(".estructuras");
+      for (let i = 0; i < cerrarInicio.length; i++) {
+         cerrarEstructuras[i].style.width = "0px";
+         cerrarEstructuras[i].style.height = "0px";
+         
+      }
+
+   document.body.style.backgroundColor = "#332b54";
+
    }
 
 </script>
-      
-      <img onclick="casaDeSam()" class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V2.png?raw=true" width="0" height="0">
-      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20TIM%20V1.png?raw=true.png?raw=true" width="0" height="0">
-      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Laboratorio%20V1.PNG?raw=true" width="0" height="0">
-      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
-      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
-                
-      <img onclick="periodico()" class="estructuras" id="periodico" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
 
-
+   
    <div>
    <p id="textoDePantalla" style="color: #858ff1; font-size: 0px; position: relative; top: 240px; left: 40px"> Cargando... </p>
       <img class="estructuras" id="pantallaDeTexto" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Pantalla.png?raw=true" width="0" height="0">
@@ -91,53 +95,6 @@
    
 <img onclick="escribirMaquinaDeEscribir()" class="sprites" id="maquinaDeEscribir" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
 <img onclick="verPeriodico()" class="sprites" id="verPeriodico" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
-
-
-
-<script>
-
-   const texto = [
-      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
-
-               ]
-
-   function actualizarTexto() {
-
-      const ahora = new Date();
-      const dia = ahora.getDay();
-
-      const bloqueDia = Math.floor(dia / 1);
-      
-      const seleccionActual = texto[bloqueDia];
-
-      document.getElementById("textoDePantalla").innerText = seleccionActual.pantalla;
-      document.getElementById("encabezado").innerText = seleccionActual.encabezado;
-      document.getElementById("parrafo").innerText = seleccionActual.parrafo;
-
-   }
-
-   actualizarTexto();
-
-   setInterval(actualizarTexto, 1000);
-
-</script>
                
 <button onclick="salirSam()" id="salirSam" class="botonesDeSalirSam">Salir0</button>
 <button onclick="salirConversacionSam()" id="salirConversacionSam" class="botonesDeSalirSam">Salir1</button>
@@ -218,33 +175,6 @@ document.getElementById("papel").style.width = "500px";
 }
 
    </script>
-      
-
-<script>
-
-function casaDeSam() {
-document.getElementById("mapa1").style.width = "0px";
-document.getElementById("mapa1").style.height = "0px";
-document.getElementById("mapa2").style.width = "0px";
-document.getElementById("mapa2").style.height = "0px";
-document.getElementById("mapa3").style.width = "0px";
-document.getElementById("mapa3").style.height = "0px";
-document.getElementById("mapa4").style.width = "0px";
-document.getElementById("mapa4").style.height = "0px";
-document.getElementById("mapa5").style.width = "0px";
-document.getElementById("mapa5").style.height = "0px";
-document.getElementById("SAM").style.width = "300px";
-document.getElementById("SAM").style.height = "410px";
-document.getElementById("salirSam").style.fontSize = "20px";
-document.getElementById("salirSam").style.padding = "5px";
-document.getElementById("lupa1").style.width = "150px";
-document.getElementById("lupa1").style.height = "200px";
-
-document.body.style.backgroundColor = "#332b54";
-
-}
-
-</script>
 
 <img class="iconos" id="samIcono1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/SAM%20Icono.png?raw=true" width="0" height="0">
    
@@ -640,6 +570,13 @@ var el = document.getElementById("salirConversacionSam");
 
 </script>
 
+      <img onclick="casaDeSam()" id="casaDeSam" class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V2.png?raw=true" width="0" height="0">
+      <img class="estructuras" id="casaDeTim" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20TIM%20V1.png?raw=true.png?raw=true" width="0" height="0">
+      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Laboratorio%20V1.PNG?raw=true" width="0" height="0">
+      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
+      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
+      <img onclick="periodico()" class="estructuras" id="periodico" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
+
 <style>
 
        body {
@@ -896,6 +833,51 @@ const form = document.forms['formulario'];
 fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       
    })
+</script>
+
+<script>
+
+   const texto = [
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de energía!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de calma!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+      { pantalla: "¡Momento de concentración!" , encabezado: "Esto es un encabezado" , parrafo: "Esto es un parrafo" },
+
+               ]
+
+   function actualizarTexto() {
+
+      const ahora = new Date();
+      const dia = ahora.getDay();
+
+      const bloqueDia = Math.floor(dia / 1);
+      
+      const seleccionActual = texto[bloqueDia];
+
+      document.getElementById("textoDePantalla").innerText = seleccionActual.pantalla;
+      document.getElementById("encabezado").innerText = seleccionActual.encabezado;
+      document.getElementById("parrafo").innerText = seleccionActual.parrafo;
+
+   }
+
+   actualizarTexto();
+
+   setInterval(actualizarTexto, 1000);
+
 </script>
 
 <meta name="viewport" content="width=device-width, initial-escale=1.0">
