@@ -21,7 +21,7 @@
       
 </head>
    
-<p class="inicio">TRANQUI NETWOORK</p>
+<p class="logo">TRANQUI NETWOORK</p>
       
 <button onclick="entrarMapa()" class="comenzar inicio">Empezar</button>
 
@@ -56,7 +56,7 @@
 
    function entrarMapa() {
       
-     const cerrarInicio = document.querySelectorAll(".inicio, .submit, .comenzar, .placeholder, .input");
+     const cerrarInicio = document.querySelectorAll(".inicio, .submit, .comenzar, .placeholder, .input, .logo");
       for (let i = 0; i < cerrarInicio.length; i++) {
          cerrarInicio[i].style.fontSize = "0px";
          cerrarInicio[i].style.visibility = "hidden";
@@ -189,6 +189,7 @@
       font-size: 12px;
       font-weight: bold;
       margin: 0 auto;
+      align-items: center;
    }
 
    .botonDeMenu {
