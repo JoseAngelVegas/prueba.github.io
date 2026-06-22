@@ -4,10 +4,10 @@
    
 <head>
 
-<button onclick="queEsTN()" id="opciones1" class="opciones">¿Qué es Tranqui Netwoork?</button>
-<button onclick="contacto()" id="opciones2" class="opciones">Contácto</button>
-<button onclick="terminosYCondiciones()" id="opciones3" class="opciones">Términos Y Condiciones</button>
-<button onclick="politicaDePrivacidad()" id="opciones4" class="opciones">Política De Privacidad</button>
+<button onclick="queEsTN()" class="opciones">¿Qué es Tranqui Netwoork?</button>
+<button onclick="contacto()" class="opciones">Contácto</button>
+<button onclick="terminosYCondiciones()" class="opciones">Términos Y Condiciones</button>
+<button onclick="politicaDePrivacidad()" class="opciones">Política De Privacidad</button>
    
 <p onclick="cerrarMenu()" class="botonDeMenu">Cerrar</p>
 
@@ -62,41 +62,24 @@
          cerrarInicio[i].style.visibility = "hidden";
          
       }
+
+   const mostrarEstructuras = document.querySelectorAll(".estructuras");
+      for (let i = 0; i < mostrarEstructuras.length; i++) {
+         mostrarEstructuras[i].style.width = "50px";
+         mostrarEstructuras[i].style.height = "50px";
+
+      document.body.style.backgroundColor = "#88ff6f";
+
+   }
    }
 
 </script>
       
-
- <style>
-
-     @keyframes bounce {
-     0% {top:200px; opacity: 0%}
-     100% {top:0px; opacity: 100%}
-       
-    }
-
-    @keyframes colorDeFondo {
-     0% {background-color: black;}
-     100% {background-color: #ffb970;}
-       
-    }
-       
-   @media only screen and (max-width:500px) {
-            .button, .submit, .mas, .input {
-               width: 40%;
-            }
-         }
-    
-</style>
-
-<!-- Esto es el mapa -->
-
-    
-      <img onclick="casaDeSam()" class="estructuras" id="mapa1" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V2.png?raw=true" width="0" height="0">
-      <img class="estructuras" id="mapa2" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20TIM%20V1.png?raw=true.png?raw=true" width="0" height="0">
-      <img class="estructuras" id="mapa3" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Laboratorio%20V1.PNG?raw=true" width="0" height="0">
-      <img class="estructuras" id="mapa4" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
-      <img class="estructuras" id="mapa5" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
+      <img onclick="casaDeSam()" class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V2.png?raw=true" width="0" height="0">
+      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20TIM%20V1.png?raw=true.png?raw=true" width="0" height="0">
+      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Laboratorio%20V1.PNG?raw=true" width="0" height="0">
+      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
+      <img class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
                 
       <img onclick="periodico()" class="estructuras" id="periodico" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Escuela%20Qu%C3%ADmica.png?raw=true" width="0" height="0">
 
@@ -214,10 +197,10 @@ document.getElementById("parrafo").style.visibility = "visible";
 
    </script>
 
-     <div class="papel" id="papel"></div>
+     <div class="papel"></div>
 
-     <p id="encabezado" class="textoDePeriodico"> Cargando... </p>
-      <p id="parrafo" class="textoDePeriodico"> Cargando... </p>
+     <p class="textoDePeriodico"> Cargando... </p>
+      <p class="textoDePeriodico"> Cargando... </p>
 
 <script>
 
@@ -691,7 +674,7 @@ var el = document.getElementById("salirConversacionSam");
 
    
       .textoDePeriodico {
-         font-size: 12px;
+         font-size: 0px;
       }
 
       .comenzar {
@@ -880,6 +863,25 @@ var el = document.getElementById("salirConversacionSam");
          border-color: #c8852d;
 
    }
+
+        @keyframes bounce {
+     0% {top:200px; opacity: 0%}
+     100% {top:0px; opacity: 100%}
+       
+    }
+
+    @keyframes colorDeFondo {
+     0% {background-color: black;}
+     100% {background-color: #ffb970;}
+       
+    }
+       
+   @media only screen and (max-width:500px) {
+            .button, .submit, .mas, .input {
+               width: 40%;
+            }
+         }
+    
    
 </style>
 
