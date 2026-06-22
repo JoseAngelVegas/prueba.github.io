@@ -93,9 +93,9 @@
 
    }
 
-   function salirSam() {
+   function salirDeCasaDeSam() {
 
-      const salirDeCasa = document.querySelectorAll(".sprites, .casaDeSam");
+      const salirDeCasa = document.querySelectorAll(".sprites, .casaDeSam, botonesDeSalirSam");
       for (let i = 0; i < salirDeCasa.length; i++) {
          salirDeCasa[i].style.width = "0px";
          salirDeCasa[i].style.height = "0px";
@@ -103,6 +103,8 @@
          salirDeCasa[i].style.padding = "0px";
 
       }
+
+            document.body.style.backgroundColor = "#88ff6f";
 
    }
 
@@ -117,7 +119,7 @@
 <img onclick="escribirMaquinaDeEscribir()" class="sprites" id="maquinaDeEscribir" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/1.%20SAM%20normal.png?raw=true" width="0" height="0">
 <img onclick="verPeriodico()" class="sprites" id="verPeriodico" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Cine.png?raw=true" width="0" height="0">
                
-<button onclick="salirSam()" id="salirSam" class="botonesDeSalirSam casaDeSam">Salir0</button>
+<button onclick="salirDeCasaDeSam()" id="salirSam" class="botonesDeSalirSam casaDeSam">Salir0</button>
    
 <button onclick="salirConversacionSam()" id="salirConversacionSam" class="botonesDeSalirSam">Salir1</button>
 
@@ -146,36 +148,6 @@
 <button onclick="samConversacion()" id="inicioSam" class="ConversacionConSAM">Hablemos.</button>
 
 <button onclick="cerrarDialogoSam()" id="cerrarDialogoSam" class="ConversacionConSAM">Excelente</button>
-
-<script>
-
-  function samConversacionMenu() {
-
-document.getElementById("SAM").style.width = "0px";
-document.getElementById("SAM").style.height = "0px";
-document.getElementById("salirSam").style.fontSize = "0px";
-document.getElementById("salirSam").style.padding = "0px";
-document.getElementById("lupa1").style.width = "0px";
-document.getElementById("lupa1").style.height = "0px";
-
-document.getElementById("samIcono1").style.width = "80px";
-document.getElementById("samIcono1").style.height = "50px";
-
-document.getElementById("InteraccionSam1").style.fontSize = "20px";
-document.getElementById("InteraccionSam1").style.padding = "15px";
-
-document.getElementById("salirConversacionSam").style.fontSize = "20px";
-document.getElementById("salirConversacionSam").style.padding = "5px";
-document.getElementById("salirConversacionSam").style.animationPlayState = "running";
-
-document.getElementById("inicioSam").style.fontSize = "20px";
-document.getElementById("inicioSam").style.padding = "5px";
-
-document.body.style.backgroundColor = "#120d24";
-
-  }
-
-</script>
 
       <img onclick="entrarCasaDeSam()" id="casaDeSam" class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20SAM%20V2.png?raw=true" width="0" height="0">
       <img id="casaDeTim" class="estructuras" src="https://github.com/JoseAngelVegas/prueba.github.io/blob/main/Casa%20de%20TIM%20V1.png?raw=true.png?raw=true" width="0" height="0">
