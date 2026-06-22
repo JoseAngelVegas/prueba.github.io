@@ -56,9 +56,10 @@
 
    function entrarMapa() {
       
-     const cerrarInicio = document.querySelectorAll(".inicio, .submit, .comenzar");
+     const cerrarInicio = document.querySelectorAll(".inicio, .submit, .comenzar, .placeholder");
       for (let i = 0; i < cerrarInicio.length; i++) {
          cerrarInicio[i].style.fontSize = "0px";
+         cerrarInicio[i].style.visibility = "hidden";
       }
    }
 
