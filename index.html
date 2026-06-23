@@ -164,7 +164,8 @@
 <style>
 
        body {
-         transition: background-color 1s;
+          animation-name: colorDeFondo;
+         animation-duration: 5s;
       } 
    
       .container {
@@ -466,6 +467,7 @@
             const seleccion = opcion[cambio];
 
             document.body.style.backgroundColor = seleccion.color;
+          document.body.style.transition = "background-color 1s"
             
         }
 
