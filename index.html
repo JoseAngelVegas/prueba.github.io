@@ -166,7 +166,7 @@
        body {
          background-color: #ffb970;
          animation-name: colorDeFondo;
-         animation-duration: 5s;
+         transition: background-color 50s;
       } 
    
       .container {
@@ -426,6 +426,58 @@
 </style>
 
 <script>
+
+<script>
+
+    const opcion = [
+        
+           0 { color: "#0b1e07" },
+           1 { color: "#0b1e07" },
+           2 { color: "#0b1e07" },
+           3 { color: "#0b1e07" },
+           4 { color: "#0b1e07" },
+           5 { color: "#5c7233" },
+           6 { color: "#5c7233" },
+           7 { color: "#5c7233" },
+           8 { color: "#5d8f4e" },
+           9 { color: "#5d8f4e" },
+           10 { color: "#5d8f4e" },
+           11 { color: "#88ff6f" },
+           12 { color: "#88ff6f" },
+           13 { color: "#88ff6f" },
+           14 { color: "#88ff6f" },
+           15 { color: "#88ff6f" },
+           16 { color: "#88ff6f" },
+           17 { color: "5d8f4e" },
+           18 { color: "5d8f4e" },
+           19 { color: "#5c7233" },
+           20 { color: "#0b1e07" },
+           21 { color: "#0b1e07" },
+           22 { color: "#0b1e07" },
+           23 { color: "#0b1e07" },
+            
+                    ]
+
+        function actualizarColor() {
+            
+            const ahora = new Date();
+            const hora = ahora.getSeconds();
+
+            const cambio = Math.floor(hora / 5);
+
+            const seleccion = opcion[cambio];
+
+            document.body.style.backgroundColor = seleccion.color;
+            
+        }
+
+        actualizarColor();
+
+        setInterval(actualizarColor, 1000
+
+</script>
+
+<script>
    const scriptUrl = 'https://script.google.com/macros/s/AKfycbzRde1ZZvK0DygQyOKX03ZPIxm2CM0mZlgZeHx6bx-I2n1Y_eItBRHVTzc0cBgGceDz/exec';
    
 const form = document.forms['formulario'];
@@ -437,6 +489,7 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
       
    })
 </script>
+
 
 <script>
 
