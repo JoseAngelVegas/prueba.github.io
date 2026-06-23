@@ -458,12 +458,12 @@
             
                     ]
 
-        function actualizarColor() {
+       function actualizarColor() {
             
             const ahora = new Date();
             const hora = ahora.getHours();
 
-            const cambio = Math.floor(hora / 1);
+            const cambio = Math.floor(ahora / 1);
 
             const seleccion = opcion[cambio];
 
@@ -473,7 +473,7 @@
 
         actualizarColor();
 
-        setInterval(actualizarColor, 1000
+        setInterval(actualizarColor, 1000);
 
 </script>
 
