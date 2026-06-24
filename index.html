@@ -422,7 +422,6 @@
    
 </style>
 
-<script>
 
 <script>
 
@@ -458,20 +457,19 @@
        function actualizarColor() {
             
             const ahoraColor = new Date();
-            const hora = ahoraColor.getHours();
+            const hora = ahoraColor.getSeconds();
 
-            const cambio = Math.floor(hora / 1);
+            const cambio = Math.floor(hora / 5);
 
             const seleccion = opcion[cambio];
 
             document.body.style.backgroundColor = seleccion.color;
-          document.body.style.transition = "background-color 1s"
             
         }
 
         actualizarColor();
 
-        setInterval(actualizarColor, 3600000);
+        setInterval(actualizarColor, 10000);
 
 </script>
 
@@ -539,3 +537,4 @@ fetch(scriptUrl, {method: 'POST', body: new FormData(form)})
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
