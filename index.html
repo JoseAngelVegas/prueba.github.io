@@ -35,7 +35,7 @@
 
 <div class="botones">
 
-<input name="Publicaciones" class="input" type="text" placeholder=" " maxlenght="50"/>
+<input name="Publicaciones" class="input" id="escribirTexto" type="text" placeholder=" " maxlenght="50"/>
 
 <input  id="encabezado" name="Encabezado" class="escribirPeriodico" type="text" placeholder=" " maxlenght="50"/>
 <input  id="parrafo" name="Parrafo" class="escribirPeriodico" type="text" placeholder=" " maxlenght="100"/>
@@ -70,6 +70,8 @@
       document.getElementById("casaDeSam").style.width = "80px";
       document.getElementById("casaDeTim").style.height = "80px";
       document.getElementById("casaDeTim").style.width = "80px";
+
+      document.getElementById('escribirTexto').style.animationPlayState = "running"
 
    }
 
@@ -260,6 +262,8 @@
          border-radius: 100px;
          animation-name: animacionDeInput;
          position: absolute;
+         animation-fill-mode: both;
+         animation-play-state: paused;
     }
 
    #casaDeTimDesenfocada {
@@ -413,8 +417,8 @@
    }
 
         @keyframes animacionDeInput {
-     0% {top:200px; }
-     100% {top:0px; }
+     0% {top: 200px; }
+     100% {top: 0px; }
        
     }
 
