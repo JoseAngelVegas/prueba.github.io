@@ -22,6 +22,9 @@
 </head>
    
 <p class="logo">TRANQUI NETWOORK</p>
+
+<div id="casaDeSamDesenfocada" class="desenfoqueMenu"></div>
+<div id="casaDeTimDesenfocada" class="desenfoqueMenu"></div>
       
 <button onclick="entrarMapa()" class="comenzar inicio">Empezar</button>
 
@@ -235,7 +238,6 @@
          padding: 5px;
          position: relative;
          animation-name: animacionDeMenu;
-         animation-duration: 0.7s;
       }
 
    .enviar {
@@ -253,12 +255,20 @@
          border-color: #c8852d;
          color: black;
          padding: 5px;
-         background-color: 0,0,0,0.5;
+         background-color: 0,0,0,0;
          margin: 0 auto;
          border-radius: 100px;
          animation-name: animacionDeMenu;
          position: relative;
     }
+
+   #casaDeTimDesenfocada {
+
+      width: 80px;
+      weight: 80px;
+      background-color: yellow;
+
+   }
       
       .interactivo {
          font-size: 20px;
